@@ -1,6 +1,10 @@
 {
   "resources": [
+    {"id":{"name":"obj_test1","path":"objects/obj_test1/obj_test1.yy",},"order":1,},
+    {"id":{"name":"Debug","path":"scripts/Debug/Debug.yy",},"order":0,},
+    {"id":{"name":"obj_dither","path":"objects/obj_dither/obj_dither.yy",},"order":0,},
     {"id":{"name":"spr_test1","path":"sprites/spr_test1/spr_test1.yy",},"order":0,},
+    {"id":{"name":"sh_dither","path":"shaders/sh_dither/sh_dither.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
