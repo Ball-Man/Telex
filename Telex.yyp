@@ -2,7 +2,9 @@
   "resources": [
     {"id":{"name":"obj_test1","path":"objects/obj_test1/obj_test1.yy",},"order":1,},
     {"id":{"name":"Debug","path":"scripts/Debug/Debug.yy",},"order":0,},
+    {"id":{"name":"obj_spacebar","path":"objects/obj_spacebar/obj_spacebar.yy",},"order":3,},
     {"id":{"name":"obj_dither","path":"objects/obj_dither/obj_dither.yy",},"order":0,},
+    {"id":{"name":"spr_spacebar","path":"sprites/spr_spacebar/spr_spacebar.yy",},"order":4,},
     {"id":{"name":"spr_tele_bg","path":"sprites/spr_tele_bg/spr_tele_bg.yy",},"order":1,},
     {"id":{"name":"snd_key_down","path":"sounds/snd_key_down/snd_key_down.yy",},"order":0,},
     {"id":{"name":"spr_test1","path":"sprites/spr_test1/spr_test1.yy",},"order":0,},
