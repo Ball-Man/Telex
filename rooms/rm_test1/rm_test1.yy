@@ -27,8 +27,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_7CF5274C","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_6BD0411F","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_7CF5274C","path":"rooms/rm_test1/rm_test1.yy",},
+    {"name":"inst_6BD0411F","path":"rooms/rm_test1/rm_test1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -56,7 +56,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Room1",
+  "name": "rm_test1",
   "tags": [],
   "resourceType": "GMRoom",
 }

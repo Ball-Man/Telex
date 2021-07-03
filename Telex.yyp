@@ -3,9 +3,14 @@
     {"id":{"name":"obj_test1","path":"objects/obj_test1/obj_test1.yy",},"order":1,},
     {"id":{"name":"Debug","path":"scripts/Debug/Debug.yy",},"order":0,},
     {"id":{"name":"obj_dither","path":"objects/obj_dither/obj_dither.yy",},"order":0,},
+    {"id":{"name":"spr_tele_bg","path":"sprites/spr_tele_bg/spr_tele_bg.yy",},"order":1,},
     {"id":{"name":"spr_test1","path":"sprites/spr_test1/spr_test1.yy",},"order":0,},
+    {"id":{"name":"spr_tele_complete","path":"sprites/spr_tele_complete/spr_tele_complete.yy",},"order":2,},
     {"id":{"name":"sh_dither","path":"shaders/sh_dither/sh_dither.yy",},"order":0,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"obj_key1","path":"objects/obj_key1/obj_key1.yy",},"order":2,},
+    {"id":{"name":"spr_key1","path":"sprites/spr_key1/spr_key1.yy",},"order":3,},
+    {"id":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},"order":1,},
+    {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -21,7 +26,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},},
+    {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
