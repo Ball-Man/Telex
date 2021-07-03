@@ -13,6 +13,7 @@
     {"id":{"name":"snd_key_up","path":"sounds/snd_key_up/snd_key_up.yy",},"order":1,},
     {"id":{"name":"obj_key1","path":"objects/obj_key1/obj_key1.yy",},"order":2,},
     {"id":{"name":"spr_key1","path":"sprites/spr_key1/spr_key1.yy",},"order":3,},
+    {"id":{"name":"spr_paper","path":"sprites/spr_paper/spr_paper.yy",},"order":5,},
     {"id":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},"order":1,},
     {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},"order":0,},
   ],
