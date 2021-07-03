@@ -7,6 +7,14 @@ enum KEY_STATE {
 	PRESSED
 }
 
-is_pressed = function() {
+key_down = function() {
 	return key != "" && keyboard_check(ord(key));
+}
+
+key_released = function() {
+	return key!= "" && keyboard_check_released(ord(key));
+}
+
+key_pressed = function() {
+	return key!= "" && keyboard_check_pressed(ord(key));
 }

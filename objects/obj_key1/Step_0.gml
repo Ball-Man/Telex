@@ -1,8 +1,12 @@
 switch (state) {
 	case KEY_STATE.RELEASED:
-		if (is_pressed()) {
+		if (key_pressed()) {
 			state = KEY_STATE.PRESSED;
-			alarm_set(0, press_time);
+			
+			var snd = audio_play_sound(snd_key_down, 0, false);
+			audio_sound_pitch(snd, random_range(0.9, 1.1));
+			
+			//alarm_set(0, press_time);
 		}
 		image_index = 0;
 		
@@ -10,4 +14,15 @@ switch (state) {
 		
 	case KEY_STATE.PRESSED:
 		image_index = 1;
+		
+		if (key_released()) {
+			state = KEY_STATE.RELEASED;
+			
+			if (key_pressed) {
+				var snd = audio_play_sound(snd_key_up, 0, false);
+				audio_sound_pitch(snd, random_range(0.9, 1.1));
+			}
+		}
+		
+		break;
 }
