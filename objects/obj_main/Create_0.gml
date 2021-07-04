@@ -1,4 +1,4 @@
-max_length = 40;
+max_length = 35;
 can_write = false;
 
 // Enable/disable the player from completing the current quest
@@ -10,4 +10,4 @@ enable = function(value) {
 }
 
 enable(true);
-global.target = [new Quest("quest di prova", new QuestGiver())];
+global.target = [new Quest("prova prova prova prova prova", new QuestGiver())];
