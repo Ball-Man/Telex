@@ -14,3 +14,25 @@ function string_sanitize(str) {
 	
 	return str;
 }
+
+// Returned a splitted string by the given separator, in an array of strings
+function string_split(str, sep) {
+	var slot = 0;
+	var splits = [str]; // Array of splits
+	var str2 = ""; // Temp variable for current split
+
+	var i;
+	for (i = 1; i <= string_length(str); i++) {
+	    var curr = string_copy(str, i, 1);
+	    if (curr == sep) {
+	        splits[slot] = str2; //add this split to the array of all splits
+	        slot++;
+	        str2 = "";
+	    } else {
+	        str2 = str2 + curr;
+	        splits[slot] = str2;
+	    }
+	}
+	
+	return splits;
+}
