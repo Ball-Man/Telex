@@ -31,6 +31,7 @@ if (instance_exists(obj_paper) && can_write) {
 	if (str_len > max_length)
 		str = string_copy(keyboard_string, str_len - max_length + 1, max_length);
 	
+	obj_paper.text_color = c_white;
 	obj_paper.typed_text = str;
 	
 	// When the quest is satisfied, stop writing and change
@@ -38,6 +39,7 @@ if (instance_exists(obj_paper) && can_write) {
 	if (final_result.result == QUEST_STATUS.SATISFIED) {
 		enable(false);
 		obj_paper.text_color = $545454;
+		obj_level.quest_satisfied(global.target[final_result.index]);
 		
 		// TODO: sound effect
 	}

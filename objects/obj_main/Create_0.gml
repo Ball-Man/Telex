@@ -8,6 +8,3 @@ enable = function(value) {
 	can_write = value;
 	keyboard_string = "";
 }
-
-enable(true);
-global.target = [new Quest("prova prova prova prova prova", new QuestGiver())];
