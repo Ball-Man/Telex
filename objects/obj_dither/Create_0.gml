@@ -9,4 +9,4 @@ log("uvs", application_surface_uvs);
 log("viewport", viewport);
 
 window_set_size(960, 540);
-//window_set_fullscreen(true);
+window_set_fullscreen(true);
