@@ -6,7 +6,7 @@ function string_sanitize(str) {
 	// Remove unwanted characters
 	// (Note that this approach is highly unefficient, but is by far easier to write).
 	for (var i = 1; i <= string_length(str); i++) {
-		if ((string_byte_at(str, i) <= ord("A") || string_byte_at(str, i) >= ord("Z")) && string_char_at(str, i) != " ") {
+		if ((string_byte_at(str, i) < ord("A") || string_byte_at(str, i) > ord("Z")) && string_char_at(str, i) != " ") {
 			str = string_delete(str, i, 1);
 			i--;
 		}
