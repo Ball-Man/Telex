@@ -3,11 +3,11 @@
 // String to type. It's a vector of Quests, once the player
 // completes one of the contained ones, a new set of quests
 // will be generated.
-global.target = "";
+global.target = [];
 
 // The two main NPCs
 global.general = new QuestGiver();
-global.colonel =new QuestGiver();
+global.colonel = new QuestGiver();
 
 // NPCs giving quests in the game
 // In the original idea, there are two of them
