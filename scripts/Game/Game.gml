@@ -54,3 +54,30 @@ function Quest(text_, quest_giver_) constructor {
 		return QUEST_STATUS.UNSATISFIED;
 	}
 }
+
+// Return a struct containing data on an array of Quest results.
+// The structure is as follows:
+// { result: QUEST_STATUS, index: ... }
+// The value for the 'result' field is one of the QUEST_STATUS enum values.
+// ERRROR, if all the results are equal to ERROR. SATISFIED if at least one
+// quest has been satisfied (ideally, only one). UNSATISFIED otherwise.
+// The value of 'index' is set to the index of the satisfied quest. If no
+// quest is satisfied, 'index' will be set to -1.
+function check_results(results) {
+	var in = -1;
+	var re = QUEST_STATUS.ERROR;
+	for (var i = 0; i < array_length(results); i++) {
+		if (results[i] != QUEST_STATUS.ERROR && re == QUEST_STATUS.ERROR)
+			re = QUEST_STATUS.UNSATISFIED
+		if (results[i] == QUEST_STATUS.SATISFIED) {
+			re = QUEST_STATUS.SATISFIED;
+			in = i;
+		}
+		if (results[i] == QUEST_STATUS.UNSATISFIED && re != QUEST_STATUS.SATISFIED)
+			re = QUEST_STATUS.UNSATISFIED;
+		if (results[i] == QUEST_STATUS.ERROR && re != QUEST_STATUS.SATISFIED && re != QUEST_STATUS.ERROR)
+			re = QUEST_STATUS.UNSATISFIED;
+	}
+	
+	return {result: re, index: in};
+}
