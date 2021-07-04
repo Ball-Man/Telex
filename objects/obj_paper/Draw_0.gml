@@ -8,7 +8,7 @@ for (var i = 1; i <= string_length(typed_text); i++) {
 }
 
 draw_set_halign(fa_center);
-draw_set_color(c_white);
+draw_set_color(text_color);
 draw_set_font(fnt_typewriter);
 draw_text(x, y + text_hoffset, typed_text);
 draw_set_halign(fa_left);

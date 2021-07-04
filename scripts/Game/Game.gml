@@ -9,6 +9,9 @@ global.target = [];
 global.general = new QuestGiver();
 global.colonel = new QuestGiver();
 
+// Number of errors from the player
+global.errors = 0;
+
 // NPCs giving quests in the game
 // In the original idea, there are two of them
 function QuestGiver() constructor {
@@ -27,7 +30,7 @@ enum QUEST_STATUS {
 
 // A text to be typed on the teleprinter.
 function Quest(text_, quest_giver_) constructor {
-	text = text_;
+	text = string_upper(text_);
 	quest_giver = quest_giver_;
 	
 	// When a quest is satisfied, the registered QuestGiver's trust
@@ -38,6 +41,7 @@ function Quest(text_, quest_giver_) constructor {
 	// If the quest is perfectly satisfied, SATISFIED is returned.
 	static satisfy = function(typed_text) {
 		// Sanity check on typed text
+		typed_text = string_upper(typed_text);
 		if (string_length(typed_text) > string_length(text))
 			typed_text = string_copy(typed_text, 1, string_length(text));
 		
