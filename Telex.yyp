@@ -12,6 +12,7 @@
     {"id":{"name":"spr_tele_bg","path":"sprites/spr_tele_bg/spr_tele_bg.yy",},"order":1,},
     {"id":{"name":"Game","path":"scripts/Game/Game.yy",},"order":1,},
     {"id":{"name":"TestsUtility","path":"scripts/TestsUtility/TestsUtility.yy",},"order":1,},
+    {"id":{"name":"fnt_typewriter","path":"fonts/fnt_typewriter/fnt_typewriter.yy",},"order":0,},
     {"id":{"name":"snd_key_down","path":"sounds/snd_key_down/snd_key_down.yy",},"order":0,},
     {"id":{"name":"spr_test1","path":"sprites/spr_test1/spr_test1.yy",},"order":0,},
     {"id":{"name":"spr_tele_complete","path":"sprites/spr_tele_complete/spr_tele_complete.yy",},"order":2,},
