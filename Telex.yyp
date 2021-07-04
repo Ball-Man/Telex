@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"obj_test1","path":"objects/obj_test1/obj_test1.yy",},"order":1,},
+    {"id":{"name":"spr_general","path":"sprites/spr_general/spr_general.yy",},"order":6,},
     {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},"order":0,},
     {"id":{"name":"obj_paper","path":"objects/obj_paper/obj_paper.yy",},"order":6,},
     {"id":{"name":"obj_main","path":"objects/obj_main/obj_main.yy",},"order":2,},
@@ -14,6 +15,7 @@
     {"id":{"name":"Game","path":"scripts/Game/Game.yy",},"order":1,},
     {"id":{"name":"TestsUtility","path":"scripts/TestsUtility/TestsUtility.yy",},"order":0,},
     {"id":{"name":"fnt_typewriter","path":"fonts/fnt_typewriter/fnt_typewriter.yy",},"order":0,},
+    {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},"order":7,},
     {"id":{"name":"snd_key_down","path":"sounds/snd_key_down/snd_key_down.yy",},"order":0,},
     {"id":{"name":"spr_test1","path":"sprites/spr_test1/spr_test1.yy",},"order":0,},
     {"id":{"name":"spr_tele_complete","path":"sprites/spr_tele_complete/spr_tele_complete.yy",},"order":2,},
