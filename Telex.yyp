@@ -13,6 +13,7 @@
     {"id":{"name":"obj_questgiver","path":"objects/obj_questgiver/obj_questgiver.yy",},"order":12,},
     {"id":{"name":"obj_tests","path":"objects/obj_tests/obj_tests.yy",},"order":0,},
     {"id":{"name":"Dialog","path":"scripts/Dialog/Dialog.yy",},"order":4,},
+    {"id":{"name":"Keyboard","path":"scripts/Keyboard/Keyboard.yy",},"order":5,},
     {"id":{"name":"fnt_general","path":"fonts/fnt_general/fnt_general.yy",},"order":1,},
     {"id":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},"order":2,},
     {"id":{"name":"spr_note","path":"sprites/spr_note/spr_note.yy",},"order":9,},
@@ -60,9 +61,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},},
     {"roomId":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},},
     {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
-    {"roomId":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -73,7 +74,7 @@
     {"folderPath":"folders/Objects.yy","order":1,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms.yy","order":2,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":7,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts/Tests.yy","order":5,"resourceVersion":"1.0","name":"Tests","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Tests.yy","order":6,"resourceVersion":"1.0","name":"Tests","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Levels.yy","order":8,"resourceVersion":"1.0","name":"Levels","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/test objects.yy","order":0,"resourceVersion":"1.0","name":"test objects","tags":[],"resourceType":"GMFolder",},
   ],
