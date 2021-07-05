@@ -19,6 +19,9 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_main","path":"objects/obj_main/obj_main.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":64.0,"resourceVersion":"1.0","name":"inst_2FAEF359","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_paper","path":"objects/obj_paper/obj_paper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":150.0,"y":121.0,"resourceVersion":"1.0","name":"inst_78C56662","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_test_level","path":"objects/obj_test_level/obj_test_level.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":96.0,"resourceVersion":"1.0","name":"inst_3C4F87E0","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"text","path":"objects/obj_note/obj_note.yy",},"objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"value":"Mamma mia pizzeria quanto amo la pizza ahah boboo","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":160.0,"resourceVersion":"1.0","name":"inst_5476CAA4","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"assets","tags":[],"resourceType":"GMRAssetLayer",},
     {"instances":[
@@ -158,6 +161,7 @@
     {"name":"inst_2FAEF359","path":"rooms/rm_test2/rm_test2.yy",},
     {"name":"inst_78C56662","path":"rooms/rm_test2/rm_test2.yy",},
     {"name":"inst_3C4F87E0","path":"rooms/rm_test2/rm_test2.yy",},
+    {"name":"inst_5476CAA4","path":"rooms/rm_test2/rm_test2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
