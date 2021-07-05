@@ -1,4 +1,5 @@
 /// @description Scale the note
+event_inherited();
 
 // Resize the note to fit the current text
 resize = function() {
