@@ -16,8 +16,9 @@ if (is_undefined(dragged_item.instance)) {
 // If an item is being dragged
 else {
 	// Move the dragged item where the mouse is
-	dragged_item.instance.x = mouse_x - dragged_item.offset[0];
-	dragged_item.instance.y = mouse_y - dragged_item.offset[1];
+	// Clamp the position inside the proper area (obj_note_area).
+	dragged_item.instance.x = clamp(mouse_x - dragged_item.offset[0], obj_note_area.bbox_left, obj_note_area.bbox_right);
+	dragged_item.instance.y = clamp(mouse_y - dragged_item.offset[1], obj_note_area.bbox_top, obj_note_area.bbox_bottom);
 	
 	log("dragging", dragged_item);
 	
