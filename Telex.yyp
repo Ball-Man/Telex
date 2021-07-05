@@ -27,6 +27,7 @@
     {"id":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"order":9,},
     {"id":{"name":"String","path":"scripts/String/String.yy",},"order":2,},
     {"id":{"name":"sh_dither","path":"shaders/sh_dither/sh_dither.yy",},"order":0,},
+    {"id":{"name":"Drag","path":"scripts/Drag/Drag.yy",},"order":3,},
     {"id":{"name":"snd_key_up","path":"sounds/snd_key_up/snd_key_up.yy",},"order":1,},
     {"id":{"name":"spr_colonel","path":"sprites/spr_colonel/spr_colonel.yy",},"order":7,},
     {"id":{"name":"obj_key1","path":"objects/obj_key1/obj_key1.yy",},"order":5,},
@@ -64,7 +65,7 @@
     {"folderPath":"folders/Objects.yy","order":1,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms.yy","order":2,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":7,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts/Tests.yy","order":3,"resourceVersion":"1.0","name":"Tests","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Tests.yy","order":4,"resourceVersion":"1.0","name":"Tests","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Levels.yy","order":8,"resourceVersion":"1.0","name":"Levels","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [

@@ -5,12 +5,19 @@ if (is_undefined(dragged_item.instance)) {
 	// On click, start dragging an item
 	if (mouse_check_button_pressed(mb_left)) {
 		instances = ds_list_create();
-		collision_point_list(mouse_x, mouse_y, obj_draggable, false, true, instances, true);
+		collision_point_list(mouse_x, mouse_y, obj_draggable, false, true, instances, false);
 		if (!ds_list_empty(instances)) {
+			// Find the colliding instance with the lowest depth (the visible one should be dragged first)
 			var dragged_instance = instances[| 0];
+			for (var i = 1; i < ds_list_size(instances); i++)
+				if (instances[| i].depth < dragged_instance.depth)
+					dragged_instance = instances[| i];
+			
 			dragged_item.instance = dragged_instance;
 			dragged_item.offset = [mouse_x - dragged_instance.x, mouse_y - dragged_instance.y]
+			dragged_instance.swap_top();
 		}
+		ds_list_destroy(instances);
 	}
 }
 // If an item is being dragged
@@ -23,6 +30,7 @@ else {
 	log("dragging", dragged_item);
 	
 	// If the mouse is released, release the item
-	if (mouse_check_button_released(mb_left))
+	if (mouse_check_button_released(mb_left)) {
 		dragged_item.instance = undefined;
+	}
 }
