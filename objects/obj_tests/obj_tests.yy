@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "test objects",
+    "path": "folders/Objects/test objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_tests",

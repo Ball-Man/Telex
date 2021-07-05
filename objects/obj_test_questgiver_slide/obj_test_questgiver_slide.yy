@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_test1",
-    "path": "sprites/spr_test1/spr_test1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -22,6 +19,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,7 +28,7 @@
     "path": "folders/Objects/test objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_test1",
+  "name": "obj_test_questgiver_slide",
   "tags": [],
   "resourceType": "GMObject",
 }

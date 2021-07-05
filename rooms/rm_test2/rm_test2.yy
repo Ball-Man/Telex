@@ -20,7 +20,8 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_paper","path":"objects/obj_paper/obj_paper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":150.0,"y":121.0,"resourceVersion":"1.0","name":"inst_78C56662","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_test_level","path":"objects/obj_test_level/obj_test_level.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":96.0,"resourceVersion":"1.0","name":"inst_3C4F87E0","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_drag","path":"objects/obj_drag/obj_drag.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":128.0,"resourceVersion":"1.0","name":"inst_641A408B","tags":[],"resourceType":"GMRInstance",},
-      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_test_questgiver_slide","path":"objects/obj_test_questgiver_slide/obj_test_questgiver_slide.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":0.0,"resourceVersion":"1.0","name":"inst_7882E497","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
             {"propertyId":{"name":"text","path":"objects/obj_note/obj_note.yy",},"objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"value":"Mamma mia pizzeria quanto amo la pizza ahah boboo","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -172,6 +173,7 @@
     {"name":"inst_641A408B","path":"rooms/rm_test2/rm_test2.yy",},
     {"name":"inst_5476CAA4","path":"rooms/rm_test2/rm_test2.yy",},
     {"name":"inst_2D4B13E9","path":"rooms/rm_test2/rm_test2.yy",},
+    {"name":"inst_7882E497","path":"rooms/rm_test2/rm_test2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

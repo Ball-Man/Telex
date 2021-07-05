@@ -32,9 +32,18 @@ function QuestGiver() constructor {
 			
 			if (!is_undefined(sprite))
 				instance.sprite_index = sprite;
+			instance.quest_giver = self;
 			
-			instance.slide_in = true;
+			instance.state = QUESTGIVER_STATE.SLIDING_IN;
 		}
+	}
+	
+	// Slide the current existing instance of the QuestGiver out of the screen, and destroy it
+	static slide_out = function() {
+		if (is_undefined(instance))
+			return;
+		
+		instance.state = QUESTGIVER_STATE.SLIDING_OUT;
 	}
 }
 

@@ -1,6 +1,6 @@
 {
   "resources": [
-    {"id":{"name":"obj_test1","path":"objects/obj_test1/obj_test1.yy",},"order":1,},
+    {"id":{"name":"obj_test1","path":"objects/obj_test1/obj_test1.yy",},"order":2,},
     {"id":{"name":"spr_general","path":"sprites/spr_general/spr_general.yy",},"order":6,},
     {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},"order":0,},
     {"id":{"name":"obj_paper","path":"objects/obj_paper/obj_paper.yy",},"order":7,},
@@ -37,6 +37,7 @@
     {"id":{"name":"spr_key1","path":"sprites/spr_key1/spr_key1.yy",},"order":3,},
     {"id":{"name":"spr_quad","path":"sprites/spr_quad/spr_quad.yy",},"order":10,},
     {"id":{"name":"spr_paper","path":"sprites/spr_paper/spr_paper.yy",},"order":5,},
+    {"id":{"name":"obj_test_questgiver_slide","path":"objects/obj_test_questgiver_slide/obj_test_questgiver_slide.yy",},"order":1,},
     {"id":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},"order":1,},
     {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},"order":0,},
   ],
@@ -68,6 +69,7 @@
     {"folderPath":"folders/Notes.yy","order":7,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Tests.yy","order":4,"resourceVersion":"1.0","name":"Tests","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Levels.yy","order":8,"resourceVersion":"1.0","name":"Levels","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/test objects.yy","order":0,"resourceVersion":"1.0","name":"test objects","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
