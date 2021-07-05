@@ -8,3 +8,5 @@ enable = function(value) {
 	can_write = value;
 	keyboard_string = "";
 }
+
+global.general.slide_in();

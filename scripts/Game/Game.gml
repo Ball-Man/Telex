@@ -6,8 +6,8 @@
 global.target = [];
 
 // The two main NPCs
-global.general = new QuestGiver();
-global.colonel = new QuestGiver();
+global.general = new QuestGiver(spr_general);
+global.colonel = new QuestGiver(spr_colonel);
 
 // Number of errors from the player
 global.errors = 0;
@@ -16,9 +16,25 @@ global.errors = 0;
 // In the original idea, there are two of them
 function QuestGiver() constructor {
 	trust_level = 0;
+	sprite = undefined;
+	if (argument_count > 0)
+		sprite = argument[0];
+	instance = undefined;
 	
 	static gain_trust = function() {
 		trust_level++;
+	}
+	
+	// Create an instance of the QuestGiver and slide it on the screen
+	static slide_in = function() {
+		if (is_undefined(instance)) {
+			instance = instance_create_layer(room_width, 0, "npcs", obj_questgiver);
+			
+			if (!is_undefined(sprite))
+				instance.sprite_index = sprite;
+			
+			instance.slide_in = true;
+		}
 	}
 }
 

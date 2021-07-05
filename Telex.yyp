@@ -9,6 +9,7 @@
     {"id":{"name":"obj_note_area","path":"objects/obj_note_area/obj_note_area.yy",},"order":10,},
     {"id":{"name":"Debug","path":"scripts/Debug/Debug.yy",},"order":0,},
     {"id":{"name":"GameTests","path":"scripts/GameTests/GameTests.yy",},"order":1,},
+    {"id":{"name":"obj_questgiver","path":"objects/obj_questgiver/obj_questgiver.yy",},"order":12,},
     {"id":{"name":"obj_tests","path":"objects/obj_tests/obj_tests.yy",},"order":0,},
     {"id":{"name":"fnt_general","path":"fonts/fnt_general/fnt_general.yy",},"order":1,},
     {"id":{"name":"spr_note","path":"sprites/spr_note/spr_note.yy",},"order":9,},
