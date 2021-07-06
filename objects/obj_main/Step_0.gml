@@ -1,5 +1,5 @@
 // Manage player input and check for quest completion.
-if (instance_exists(obj_paper) && can_write) {
+if (instance_exists(obj_paper) && can_write && array_length(global.target) > 0) {
 	keyboard_string = string_sanitize(keyboard_string);
 	
 	// Check for quest completion

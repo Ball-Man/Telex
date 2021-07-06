@@ -125,7 +125,8 @@ function dialog_import() {
 			}
 
 			// Pack everything in a DialogData instance
-			sub_array[j] = new DialogData(strings_array, autoscroll, questgiver, is_undefined(trust_threshold) ? 0 : trust_threshold, quest);
+			sub_array[j] = new DialogData(strings_array, is_undefined(autoscroll) ? false : autoscroll, questgiver,
+				is_undefined(trust_threshold) ? 0 : trust_threshold, quest);
 		}
 		
 		dialog_data[? start_key] = sub_array;
@@ -136,4 +137,11 @@ function dialog_import() {
 	
 	// Cleanup
 	ds_map_destroy(file_dict);
+}
+
+// Start a dialog by sliding in the correct QuestGiver, deploying the Quest
+// and finally sliding out the QuestGiver (if required).
+function dialog_start_ext(dialog_data) {
+	var inst = instance_create_layer(0, 0, "instances", obj_dialog_manager_ext);
+	inst.dialog_data = dialog_data;
 }

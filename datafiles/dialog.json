@@ -1,25 +1,28 @@
 {
   "day1": [
     {
-      "data": ["Mamma mia", "Pizzeria"],
-      "autoscroll": false,
+      "data": [
+        "Welcome",
+        "Please have a seat"
+      ],
       "questgiver": "general"
     },
     {
-      "data": ["Pepperoni on my", "Pizza thanks"],
-      "autoscroll": false,
-      "questgiver": "general"
-    }
-  ],
-  "day2": [
-    {
+      "data": [
+        "I am Ben Pershing, General of the army",
+        "I am pleased to inform you that you are the lucky candidate who has been chosen for this job",
+        "What you have to do should be pretty straight forward",
+        "We need you to communicate to our allies overseas",
+        "I will hand you some notes with the information that we need to transmit",
+        "Just type it on the teleprinter and the system will transmit it via the telegraph network",
+        "Let us start then",
+        "Try sending them this handshake message"
+      ],
       "quest": {
-        "text": "ponzio pilato",
+        "text": "Here DCA",
         "questgiver": "general"
       },
-      "data": ["Domizio", "Damolizio", "Happy hyppo"],
-      "autoscroll": true,
-      "questgiver": "colonel"
+      "questgiver": "general"
     }
   ]
 }

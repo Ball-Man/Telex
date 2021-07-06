@@ -4,7 +4,9 @@
     {"id":{"name":"spr_general","path":"sprites/spr_general/spr_general.yy",},"order":6,},
     {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},"order":0,},
     {"id":{"name":"obj_paper","path":"objects/obj_paper/obj_paper.yy",},"order":7,},
+    {"id":{"name":"obj_dialog_manager_ext","path":"objects/obj_dialog_manager_ext/obj_dialog_manager_ext.yy",},"order":2,},
     {"id":{"name":"obj_main","path":"objects/obj_main/obj_main.yy",},"order":1,},
+    {"id":{"name":"obj_level_day1","path":"objects/obj_level_day1/obj_level_day1.yy",},"order":2,},
     {"id":{"name":"obj_draggable","path":"objects/obj_draggable/obj_draggable.yy",},"order":10,},
     {"id":{"name":"obj_note_area","path":"objects/obj_note_area/obj_note_area.yy",},"order":9,},
     {"id":{"name":"Debug","path":"scripts/Debug/Debug.yy",},"order":0,},
@@ -66,11 +68,11 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_level_day1","path":"rooms/rm_level_day1/rm_level_day1.yy",},},
     {"roomId":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},},
     {"roomId":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},},
     {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
     {"roomId":{"name":"rm_level","path":"rooms/rm_level/rm_level.yy",},},
-    {"roomId":{"name":"rm_level_day1","path":"rooms/rm_level_day1/rm_level_day1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
