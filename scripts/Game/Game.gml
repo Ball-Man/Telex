@@ -12,6 +12,11 @@ global.colonel = new QuestGiver(spr_colonel);
 // Number of errors from the player
 global.errors = 0;
 
+// Palette
+#macro LIGHT_GRAY $545454
+#macro GRAY $2a2a2a
+#macro DARK_GRAY $0e0e0e
+
 // NPCs giving quests in the game
 // In the original idea, there are two of them
 function QuestGiver() constructor {
