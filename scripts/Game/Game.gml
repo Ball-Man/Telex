@@ -9,6 +9,11 @@ global.target = [];
 global.general = new QuestGiver(spr_general);
 global.colonel = new QuestGiver(spr_colonel);
 
+global.questgivers = {
+	general: global.general,
+	colonel: global.colonel
+}
+
 // Number of errors from the player
 global.errors = 0;
 

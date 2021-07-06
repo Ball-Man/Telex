@@ -8,12 +8,30 @@ global._dialog_prev_keyboard_string = "";
 global.dialog_data = undefined;
 
 // Dialogs are shown in chunks. Hence a complete dialog is a nothing but a list of strings.
-// This class contains that string, with eventual additional metadata.
+// This class contains that string, with eventual additional metadata like the Quest which
+// will be delivered after the dialog (undefined if no Quest shall start), the NPC
+// speaking (a QuestGiver), and the minimum level of trust (trust_threshold) required by the game
+// to play that specific line of dialog (by the given NPC).
+// If the dialog both deploys a quest and requires a minimum trust level, the QuestGiver associated
+// to the trust_threshold and the one inside the Quest instance must be the same.
 function DialogData(strings_) constructor {
 	strings = strings_;
+	
 	autoscroll = false;
 	if (argument_count > 1)
 		autoscroll = argument[1];
+	
+	questgiver = undefined;
+	if (argument_count > 2)
+		questgiver = argument[2];
+	
+	trust_threshold = 0;
+	if (argument_count > 3)
+		trust_threshold = argument[3];
+		
+	quest = undefined;
+	if (argument_count > 4)
+		quest = argument[4];
 }
 
 // A Dialog encapsules a DialogData and enriches it with specific
@@ -85,11 +103,29 @@ function dialog_import() {
 		// Convert all ds_lists into arrays
 		var sub_array = array_create(ds_list_size(sub_list));
 		for (var j = 0; j < ds_list_size(sub_list); j++) {
+			// Pack string data
 			var strings_array = array_create(ds_list_size(sub_list[| j][? "data"]));
 			for (var k = 0; k < ds_list_size(sub_list[| j][? "data"]); k++)
 				strings_array[k] = sub_list[| j][? "data"][| k];
-				
-			sub_array[j] = new DialogData(strings_array, sub_list[| j][? "autoscroll"]);
+			
+			var autoscroll = sub_list[| j][? "autoscroll"];		// Pack autoscroll
+			
+			// Pack questgiver
+			var questgiver_name = sub_list[| j][? "questgiver"];
+			var questgiver = variable_struct_get(global.questgivers, is_undefined(questgiver_name) ? "" : questgiver_name);
+			
+			var trust_threshold = sub_list[| j][? "trust_threshold"];	// Pack trust threshold
+
+			// Pack Quest (if "quest" is defined "text" and "questgiver" are required, cannot be undefined).
+			var quest_dict = sub_list[| j][? "quest"];
+			var quest = undefined;
+			if (!is_undefined(quest_dict)) {
+				var quest_questgiver = variable_struct_get(global.questgivers, quest_dict[? "questgiver"]);
+				var quest = new Quest(quest_dict[? "text"], quest_questgiver);
+			}
+
+			// Pack everything in a DialogData instance
+			sub_array[j] = new DialogData(strings_array, autoscroll, questgiver, is_undefined(trust_threshold) ? 0 : trust_threshold, quest);
 		}
 		
 		dialog_data[? start_key] = sub_array;

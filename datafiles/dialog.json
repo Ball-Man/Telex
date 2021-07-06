@@ -2,17 +2,24 @@
   "day1": [
     {
       "data": ["Mamma mia", "Pizzeria"],
-      "autoscroll": false
+      "autoscroll": false,
+      "questgiver": "general"
     },
     {
       "data": ["Pepperoni on my", "Pizza thanks"],
-      "autoscroll": false
+      "autoscroll": false,
+      "questgiver": "general"
     }
   ],
   "day2": [
     {
+      "quest": {
+        "text": "ponzio pilato",
+        "questgiver": "general"
+      },
       "data": ["Domizio", "Damolizio", "Happy hyppo"],
-      "autoscroll": true
+      "autoscroll": true,
+      "questgiver": "colonel"
     }
   ]
 }
