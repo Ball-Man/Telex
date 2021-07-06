@@ -1,0 +1,18 @@
+{
+  "day1": [
+    {
+      "data": ["Mamma mia", "Pizzeria"],
+      "autoscroll": false
+    },
+    {
+      "data": ["Pepperoni on my", "Pizza thanks"],
+      "autoscroll": false
+    }
+  ],
+  "day2": [
+    {
+      "data": ["Domizio", "Damolizio", "Happy hyppo"],
+      "autoscroll": true
+    }
+  ]
+}

@@ -3,13 +3,17 @@ global.current_dialog = undefined;
 global._dialog_prev_room = undefined;
 global._dialog_prev_keyboard_string = "";
 
+// Data from files
+#macro DIALOG_DATA_FILE "dialog.json"
+global.dialog_data = undefined;
+
 // Dialogs are shown in chunks. Hence a complete dialog is a nothing but a list of strings.
 // This class contains that string, with eventual additional metadata.
 function DialogData(strings_) constructor {
 	strings = strings_;
 	autoscroll = false;
 	if (argument_count > 1)
-		autoscroll = true;
+		autoscroll = argument[1];
 }
 
 // A Dialog encapsules a DialogData and enriches it with specific
@@ -52,4 +56,48 @@ function dialog_end() {
 	global.current_dialog = undefined;
 	keyboard_string = global._dialog_prev_keyboard_string;
 	room_goto(global._dialog_prev_room);
+}
+
+// Populate global.dialog_data with a dictionary of data imported
+// from json.
+function dialog_import() {
+	if (!file_exists(DIALOG_DATA_FILE)) {
+		show_error("Missing file " + DIALOG_DATA_FILE, false);
+		return;
+	}
+	
+	// Read from file
+	var file = file_text_open_read(DIALOG_DATA_FILE);
+	var json = "";
+	while (!file_text_eof(file))
+		json += file_text_readln(file);
+	
+	var file_dict = json_decode(json);
+	log("imported dialog json", json);
+	
+	// Convert into DialogData
+	var dialog_data = ds_map_create();
+	
+	var start_key = ds_map_find_first(file_dict);
+	for (var i = 0; i < ds_map_size(file_dict); i++) {
+		var sub_list = file_dict[? start_key];
+		
+		// Convert all ds_lists into arrays
+		var sub_array = array_create(ds_list_size(sub_list));
+		for (var j = 0; j < ds_list_size(sub_list); j++) {
+			var strings_array = array_create(ds_list_size(sub_list[| j][? "data"]));
+			for (var k = 0; k < ds_list_size(sub_list[| j][? "data"]); k++)
+				strings_array[k] = sub_list[| j][? "data"][| k];
+				
+			sub_array[j] = new DialogData(strings_array, sub_list[| j][? "autoscroll"]);
+		}
+		
+		dialog_data[? start_key] = sub_array;
+		
+		start_key = ds_map_find_next(file_dict, start_key);
+	}
+	global.dialog_data = dialog_data;
+	
+	// Cleanup
+	ds_map_destroy(file_dict);
 }
