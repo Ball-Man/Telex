@@ -13,12 +13,24 @@
         "What you have to do should be pretty straight forward",
         "We need you to communicate to our allies overseas",
         "I will hand you some notes with the information that we need to transmit",
-        "Just type it on the teleprinter and the system will transmit it via the telegraph network",
+        "Just type them on the teleprinter and the system will transmit everything via the telegraph network",
         "Let us start then",
         "Try sending them this handshake message"
       ],
       "quest": {
         "text": "Here DCA",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Very good",
+        "Our references suggested your name due to your supposed high loyalty and reliability",
+        "You do understand that in this job mistakes cannot be forgiven"
+      ],
+      "quest": {
+        "text": "First of july provisions",
         "questgiver": "general"
       },
       "questgiver": "general"

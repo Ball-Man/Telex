@@ -22,6 +22,9 @@ quest_satisfied = function(quest) {
 		return;
 	}
 	
+	// Reset current quests
+	global.target = [];
+	
 	// Start new dialog
 	dialog_start_ext(dialogs[counter]);
 }
