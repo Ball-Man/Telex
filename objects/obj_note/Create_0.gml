@@ -3,7 +3,7 @@ event_inherited();
 
 // Resize the note to fit the current text
 resize = function() {
-	draw_set_font(fnt_general);
+	draw_set_font(font);
 	
 	var text_width = string_width_ext(text, -1, max_width);
 	var text_height = string_height_ext(text, -1, max_width);

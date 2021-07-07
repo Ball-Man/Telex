@@ -14,6 +14,11 @@ global.questgivers = {
 	colonel: global.colonel
 }
 
+global.questgiver_fonts = {
+	general: fnt_general,
+	colonel: fnt_colonel
+}
+
 // Number of errors from the player
 global.errors = 0;
 
