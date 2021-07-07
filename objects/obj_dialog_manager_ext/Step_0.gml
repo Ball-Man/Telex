@@ -53,6 +53,9 @@ switch (state) {
 		
 		
 	case DIALOG_MANAGER_STATE.END:
+		// If no quest is given, automatically satisfy
+		if (is_undefined(dialog_data.quest))
+			obj_level.quest_satisfied(undefined);
 		instance_destroy();
 		break;
 		

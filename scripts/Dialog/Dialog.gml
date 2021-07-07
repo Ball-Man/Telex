@@ -142,6 +142,11 @@ function dialog_import() {
 // Start a dialog by sliding in the correct QuestGiver, deploying the Quest
 // and finally sliding out the QuestGiver (if required).
 function dialog_start_ext(dialog_data) {
+	var action_time = 60;
+	if (argument_count > 1)
+		action_time = argument[1];
+	
 	var inst = instance_create_layer(0, 0, "instances", obj_dialog_manager_ext);
 	inst.dialog_data = dialog_data;
+	inst.action_time = action_time;
 }
