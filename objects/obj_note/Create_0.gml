@@ -8,8 +8,8 @@ resize = function() {
 	var text_width = string_width_ext(text, -1, max_width);
 	var text_height = string_height_ext(text, -1, max_width);
 
-	image_xscale = (text_width + 20) / sprite_width;
-	image_yscale = (text_height + 20) / sprite_height;
+	image_xscale = (text_width + 20) / sprite_get_width(sprite_index);
+	image_yscale = (text_height + 20) / sprite_get_height(sprite_index);
 }
 
 resize();

@@ -6,8 +6,8 @@
 global.target = [];
 
 // The two main NPCs
-global.general = new QuestGiver(spr_general);
-global.colonel = new QuestGiver(spr_colonel);
+global.general = new QuestGiver(spr_general, "general");
+global.colonel = new QuestGiver(spr_colonel, "colonel");
 
 global.questgivers = {
 	general: global.general,
@@ -31,9 +31,15 @@ global.errors = 0;
 // In the original idea, there are two of them
 function QuestGiver() constructor {
 	trust_level = 0;
+	
 	sprite = undefined;
 	if (argument_count > 0)
 		sprite = argument[0];
+	
+	name_ = "";
+	if (argument_count > 1)
+		name_ = argument[1];
+	
 	instance = undefined;
 	
 	static gain_trust = function() {

@@ -13,3 +13,13 @@ function draggables_calculate_depth() {
 	for (var i = 0; i < ds_list_size(global.draggables); i++)
 		global.draggables[| i].depth = base_depth - i;
 }
+
+// Spawn a note from the given Quest obect.
+function generate_note(quest) {
+	var note = instance_create_layer(obj_note_area.x, obj_note_area.y, "notes", obj_note);
+	note.text = quest.text;
+	note.font = variable_struct_get(global.questgiver_fonts, quest.quest_giver.name_);
+	note.resize();
+	
+	return note;
+}

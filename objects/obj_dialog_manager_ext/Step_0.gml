@@ -38,7 +38,8 @@ switch (state) {
 	case DIALOG_MANAGER_STATE.DELIVER_QUEST:
 		// Update the current target with the given Quest
 		global.target[array_length(global.target)] = dialog_data.quest;
-		// TODO: add some kind of animation and generate the note
+		// TODO: add some kind of animation
+		generate_note(dialog_data.quest);
 		
 		// Slide out or end based on what the data requires
 		if (!is_undefined(dialog_data.questgiver)) {
