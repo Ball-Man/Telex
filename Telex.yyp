@@ -16,6 +16,7 @@
     {"id":{"name":"obj_tests","path":"objects/obj_tests/obj_tests.yy",},"order":0,},
     {"id":{"name":"Dialog","path":"scripts/Dialog/Dialog.yy",},"order":4,},
     {"id":{"name":"fnt_colonel","path":"fonts/fnt_colonel/fnt_colonel.yy",},"order":2,},
+    {"id":{"name":"obj_mistakes","path":"objects/obj_mistakes/obj_mistakes.yy",},"order":12,},
     {"id":{"name":"Keyboard","path":"scripts/Keyboard/Keyboard.yy",},"order":5,},
     {"id":{"name":"fnt_general","path":"fonts/fnt_general/fnt_general.yy",},"order":1,},
     {"id":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},"order":2,},
@@ -53,6 +54,7 @@
     {"id":{"name":"rm_level_day1","path":"rooms/rm_level_day1/rm_level_day1.yy",},"order":4,},
     {"id":{"name":"obj_test_questgiver_slide","path":"objects/obj_test_questgiver_slide/obj_test_questgiver_slide.yy",},"order":1,},
     {"id":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},"order":1,},
+    {"id":{"name":"spr_mistakes","path":"sprites/spr_mistakes/spr_mistakes.yy",},"order":11,},
     {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},"order":0,},
   ],
   "Options": [
@@ -85,9 +87,9 @@
     {"folderPath":"folders/Rooms.yy","order":2,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":7,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Tests.yy","order":6,"resourceVersion":"1.0","name":"Tests","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects/levels.yy","order":12,"resourceVersion":"1.0","name":"levels","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/levels.yy","order":13,"resourceVersion":"1.0","name":"levels","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/test objects.yy","order":0,"resourceVersion":"1.0","name":"test objects","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects/dialog.yy","order":13,"resourceVersion":"1.0","name":"dialog","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/dialog.yy","order":14,"resourceVersion":"1.0","name":"dialog","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
