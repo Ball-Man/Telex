@@ -166,4 +166,6 @@ function dialog_start_ext(dialog_data) {
 	var inst = instance_create_layer(0, 0, "instances", obj_dialog_manager_ext);
 	inst.dialog_data = dialog_data;
 	inst.action_time = action_time;
+	
+	return inst;
 }

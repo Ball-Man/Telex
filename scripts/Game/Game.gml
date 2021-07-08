@@ -28,6 +28,7 @@ global.quest_types = {
 
 // Number of errors from the player
 global.errors = 0;
+global.max_errors = 5;		// At 5, it's game over
 
 // Palette
 #macro LIGHT_GRAY $545454

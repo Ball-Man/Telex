@@ -48,5 +48,15 @@
       },
       "questgiver": "colonel"
     }
+  ],
+  "game_over": [
+    {
+      "data": [
+        "You have been warned",
+        "Mistakes are not tolerated here",
+        "Goodbye"
+      ],
+      "questgiver": "general"
+    }
   ]
 }

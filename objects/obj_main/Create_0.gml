@@ -8,3 +8,6 @@ enable = function(value) {
 	can_write = value;
 	keyboard_string = "";
 }
+
+// Used when checking for game over conditions
+game_over_dialog = undefined;
