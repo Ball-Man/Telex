@@ -33,7 +33,18 @@
         "text": "First of july provisions",
         "questgiver": "general"
       },
-      "questgiver": "general"
+      "questgiver": "general",
+      "immediate_skip": true
+    },
+    {
+      "data": [
+        "Hello"
+      ],
+      "quest": {
+        "text": "Test",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel"
     }
   ]
 }

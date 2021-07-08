@@ -32,6 +32,10 @@ function DialogData(strings_) constructor {
 	quest = undefined;
 	if (argument_count > 4)
 		quest = argument[4];
+		
+	immediate_skip = false;
+	if (argument_count > 5)
+		immediate_skip = argument[5];
 }
 
 // A Dialog encapsules a DialogData and enriches it with specific
@@ -123,10 +127,14 @@ function dialog_import() {
 				var quest_questgiver = variable_struct_get(global.questgivers, quest_dict[? "questgiver"]);
 				var quest = new Quest(quest_dict[? "text"], quest_questgiver);
 			}
-
+			
+			// Pack immediate skip
+			var immediate_skip = sub_list[| j][? "immediate_skip"];
+			
 			// Pack everything in a DialogData instance
 			sub_array[j] = new DialogData(strings_array, is_undefined(autoscroll) ? false : autoscroll, questgiver,
-				is_undefined(trust_threshold) ? 0 : trust_threshold, quest);
+				is_undefined(trust_threshold) ? 0 : trust_threshold, quest,
+				is_undefined(immediate_skip) ? false : immediate_skip);
 		}
 		
 		dialog_data[? start_key] = sub_array;
