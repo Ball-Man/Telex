@@ -28,6 +28,7 @@
     {"id":{"name":"spr_tele_bg","path":"sprites/spr_tele_bg/spr_tele_bg.yy",},"order":1,},
     {"id":{"name":"Game","path":"scripts/Game/Game.yy",},"order":1,},
     {"id":{"name":"DialogTests","path":"scripts/DialogTests/DialogTests.yy",},"order":3,},
+    {"id":{"name":"snd_mistake","path":"sounds/snd_mistake/snd_mistake.yy",},"order":5,},
     {"id":{"name":"TestsUtility","path":"scripts/TestsUtility/TestsUtility.yy",},"order":0,},
     {"id":{"name":"fnt_typewriter","path":"fonts/fnt_typewriter/fnt_typewriter.yy",},"order":0,},
     {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},"order":8,},

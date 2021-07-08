@@ -21,7 +21,7 @@ if (instance_exists(obj_paper) && can_write && array_length(global.target) > 0) 
 		log("keyboard string", keyboard_string);
 		global.errors += 1;
 		
-		// TODO: sound effect
+		audio_play_sound(snd_mistake, 0, false);
 	}
 	
 	
