@@ -16,12 +16,12 @@ state = LEVEL_STATE.IDLE;
 init_level = function() {
 	log("starting quest", dialogs[0]);
 	dialog_start_ext(dialogs[0], 0);
-	obj_main.enable(true);
+	obj_main.enable(false);
 }
 
 // Simply go on to the next quest
 quest_satisfied = function(quest) {
-	obj_main.enable(true);
+	obj_main.enable(false);
 	
 	counter++;
 	if (counter >= array_length(dialogs)) {

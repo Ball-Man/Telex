@@ -39,6 +39,7 @@ switch (state) {
 		// Update the current target with the given Quest
 		global.target[array_length(global.target)] = dialog_data.quest;
 		generate_note(dialog_data.quest);
+		obj_main.enable(true);
 		
 		// Slide out or end based on what the data requires
 		if (!is_undefined(dialog_data.questgiver)) {
