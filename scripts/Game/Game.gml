@@ -22,7 +22,8 @@ global.questgiver_fonts = {
 // Map of subtypes
 global.quest_types = {
 	def: Quest,
-	ceaser: CeaserQuest
+	ceaser: CeaserQuest,
+	subs: SubstitutionQuest
 }
 
 // Number of errors from the player
@@ -134,6 +135,46 @@ function CeaserQuest(text_, quest_giver_, offset_) : Quest(text_, quest_giver_) 
 			}
 			else
 				cyphertext += chr(byte);
+		}
+		
+		return cyphertext;
+	}
+}
+
+// A note encrypted by letter substitution
+// "letters" is a comma separated string, representing a list of letters (no spaces allowed).
+// Each pair of letters (index 0 and 1, index 2 and 3, etc.) will be treated as a substitution
+// pair in the final string.
+function SubstitutionQuest(text_, quest_giver_, letters_): Quest(text_, quest_giver_) constructor {
+	var letters_array = string_split(string_lower(letters_), ",");
+	
+	// Sanity check
+	if (array_length(letters_array) % 2 != 0)
+		show_error("In SubstitutionQuest the given array of letters should be of even length.", false);
+	
+	// Create substitution map
+	letters = ds_map_create();
+	
+	for (var i = 0; i < array_length(letters_array); i++) {
+		var from = letters_array[i];
+		if (i % 2)
+			var to = letters_array[i - 1]
+		else
+			var to = letters_array[i + 1];
+		
+		// Hardcode both upper and lowercase letters
+		// This could be solved using offsets instead, but who cares really
+		letters[? from] = to;
+		letters[? string_upper(from)] = string_upper(to);
+	}
+	
+	// Retrieve the text (substituted) to be shown on the note
+	static get_note_text = function() {
+		var cyphertext = "";
+		for (var i = 1; i <= string_length(text); i++) {
+			var char = string_char_at(text, i);
+			var subst = letters[? char];
+			cyphertext += is_undefined(subst) ? char : subst;
 		}
 		
 		return cyphertext;

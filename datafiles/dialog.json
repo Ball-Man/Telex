@@ -41,10 +41,10 @@
         "Hello"
       ],
       "quest": {
-        "text": "A Z",
+        "text": "Amico mio della bolizia.",
         "questgiver": "colonel",
-        "type": "ceaser",
-        "param": 1
+        "type": "subs",
+        "param": "a,c,d,b"
       },
       "questgiver": "colonel"
     }
