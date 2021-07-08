@@ -17,7 +17,7 @@ function draggables_calculate_depth() {
 // Spawn a note from the given Quest obect.
 function generate_note(quest) {
 	var note = instance_create_layer(obj_note_area.bbox_right + 10, obj_note_area.y, "notes", obj_note);
-	note.text = quest.text;
+	note.text = quest.get_note_text();
 	note.font = variable_struct_get(global.questgiver_fonts, quest.quest_giver.name_);
 	note.resize();
 	

@@ -19,6 +19,12 @@ global.questgiver_fonts = {
 	colonel: fnt_colonel
 }
 
+// Map of subtypes
+global.quest_types = {
+	def: Quest,
+	ceaser: CeaserQuest
+}
+
 // Number of errors from the player
 global.errors = 0;
 
@@ -76,7 +82,7 @@ enum QUEST_STATUS {
 
 // A text to be typed on the teleprinter.
 function Quest(text_, quest_giver_) constructor {
-	text = string_upper(text_);
+	text = text_;
 	quest_giver = quest_giver_;
 	
 	// When a quest is satisfied, the registered QuestGiver's trust
@@ -92,7 +98,7 @@ function Quest(text_, quest_giver_) constructor {
 			typed_text = string_copy(typed_text, 1, string_length(text));
 		
 		// Check for errors
-		if (string_copy(text, 1, string_length(typed_text)) != typed_text)
+		if (string_copy(string_upper(text), 1, string_length(typed_text)) != typed_text)
 			return QUEST_STATUS.ERROR;
 		
 		// Check for satisfaction
@@ -102,6 +108,35 @@ function Quest(text_, quest_giver_) constructor {
 		}
 		
 		return QUEST_STATUS.UNSATISFIED;
+	}
+	
+	// Retrieve the text to be shown on the note
+	static get_note_text = function() {
+		return text;
+	}
+}
+
+// A note encrypted with the Ceaser Cypher (generalized with an offset).
+function CeaserQuest(text_, quest_giver_, offset_) : Quest(text_, quest_giver_) constructor {
+	offset = offset_;
+	
+	// Retrieve the text (crypted) to be shown on the note
+	static get_note_text = function() {
+		var cyphertext = "";
+		
+		for (var i = 1; i <= string_length(text); i++) {
+			var byte = string_byte_at(text, i);
+			if (byte >= ord("a") && byte <= ord("z")) {
+				cyphertext += chr(ord("a") + (byte - ord("a") + offset) % (ord("z") - ord("a") + 1));
+			}
+			else if (byte >= ord("A") && byte <= ord("Z")) {
+				cyphertext += chr(ord("A") + (byte - ord("A") + offset) % (ord("Z") - ord("A") + 1));
+			}
+			else
+				cyphertext += chr(byte);
+		}
+		
+		return cyphertext;
 	}
 }
 

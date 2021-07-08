@@ -41,8 +41,10 @@
         "Hello"
       ],
       "quest": {
-        "text": "Test",
-        "questgiver": "colonel"
+        "text": "A Z",
+        "questgiver": "colonel",
+        "type": "ceaser",
+        "param": 1
       },
       "questgiver": "colonel"
     }

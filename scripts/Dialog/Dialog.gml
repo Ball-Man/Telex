@@ -125,7 +125,16 @@ function dialog_import() {
 			var quest = undefined;
 			if (!is_undefined(quest_dict)) {
 				var quest_questgiver = variable_struct_get(global.questgivers, quest_dict[? "questgiver"]);
+				var quest_type_name = quest_dict[? "type"];
+				var quest_type = undefined;
+				if (!is_undefined(quest_type_name))
+					quest_type = variable_struct_get(global.quest_types, quest_type_name);
+				
+				var quest_parameter = quest_dict[? "param"];
+				
 				var quest = new Quest(quest_dict[? "text"], quest_questgiver);
+				if (!is_undefined(quest_type) && quest_type != Quest)
+					quest = new quest_type(quest_dict[? "text"], quest_questgiver, quest_parameter);
 			}
 			
 			// Pack immediate skip
