@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.64,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_key_down.ogg",
-  "duration": 0.148042,
+  "soundFile": "snd_note.ogg",
+  "duration": 0.291458,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_key_down",
+  "name": "snd_note",
   "tags": [],
   "resourceType": "GMSound",
 }

@@ -11,5 +11,5 @@ if (keyboard_check_array_pressed(global.key_dialog)) {
 		cur_string = global.current_dialog.next_string();
 	}
 	
-	// TODO: sound effect
+	play_voice();
 }

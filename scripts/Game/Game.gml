@@ -6,8 +6,8 @@
 global.target = [];
 
 // The two main NPCs
-global.general = new QuestGiver(spr_general, "general");
-global.colonel = new QuestGiver(spr_colonel, "colonel");
+global.general = new QuestGiver(spr_general, "general", fnt_general, snd_general_voice);
+global.colonel = new QuestGiver(spr_colonel, "colonel", fnt_colonel, snd_colonel_voice);
 
 global.questgivers = {
 	general: global.general,
@@ -17,6 +17,11 @@ global.questgivers = {
 global.questgiver_fonts = {
 	general: fnt_general,
 	colonel: fnt_colonel
+}
+
+global.questgiver_voices = {
+	general: snd_general_voice,
+	colonel: snd_colonel_voice
 }
 
 // Map of subtypes
@@ -47,6 +52,14 @@ function QuestGiver() constructor {
 	name_ = "";
 	if (argument_count > 1)
 		name_ = argument[1];
+	
+	note_font = fnt_general;
+	if (argument_count > 2)
+		note_font = argument[2];
+		
+	voice = snd_general_voice;
+	if (argument_count > 3)
+		voice = argument[3];
 	
 	instance = undefined;
 	
