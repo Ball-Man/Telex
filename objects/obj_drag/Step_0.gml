@@ -16,6 +16,9 @@ if (is_undefined(dragged_item.instance)) {
 			dragged_item.instance = dragged_instance;
 			dragged_item.offset = [mouse_x - dragged_instance.x, mouse_y - dragged_instance.y]
 			dragged_instance.swap_top();
+			
+			// If picked up while sliding, stop
+			dragged_instance.sliding = false;
 		}
 		ds_list_destroy(instances);
 	}

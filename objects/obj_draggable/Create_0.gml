@@ -18,3 +18,8 @@ swap_top = function() {
 	ds_list_add(global.draggables, id);		// Re-add
 	draggables_calculate_depth();
 }
+
+// Slide to a target
+sliding = true;
+target_x = x;
+target_y = y;
