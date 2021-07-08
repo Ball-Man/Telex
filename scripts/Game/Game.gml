@@ -77,6 +77,8 @@ function QuestGiver() constructor {
 			instance.quest_giver = self;
 			
 			instance.state = QUESTGIVER_STATE.SLIDING_IN;
+			
+			audio_play_sound(snd_step1, 0, false);
 		}
 	}
 	
@@ -86,6 +88,7 @@ function QuestGiver() constructor {
 			return;
 		
 		instance.state = QUESTGIVER_STATE.SLIDING_OUT;
+		audio_play_sound(snd_step2, 0, false);
 	}
 }
 
