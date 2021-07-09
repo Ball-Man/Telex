@@ -27,7 +27,7 @@ global.questgiver_voices = {
 // Map of subtypes
 global.quest_types = {
 	def: Quest,
-	ceaser: CeaserQuest,
+	caeser: CaeserQuest,
 	subs: SubstitutionQuest
 }
 
@@ -134,8 +134,8 @@ function Quest(text_, quest_giver_) constructor {
 	}
 }
 
-// A note encrypted with the Ceaser Cypher (generalized with an offset).
-function CeaserQuest(text_, quest_giver_, offset_) : Quest(text_, quest_giver_) constructor {
+// A note encrypted with the Caeser Cypher (generalized with an offset).
+function CaeserQuest(text_, quest_giver_, offset_) : Quest(text_, quest_giver_) constructor {
 	offset = offset_;
 	
 	// Retrieve the text (crypted) to be shown on the note

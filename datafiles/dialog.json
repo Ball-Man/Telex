@@ -31,7 +31,9 @@
       ],
       "quest": {
         "text": "First of july provisions",
-        "questgiver": "general"
+        "questgiver": "general",
+        "type": "caeser",
+        "param": 1
       },
       "questgiver": "general"
     },
