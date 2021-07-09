@@ -46,7 +46,8 @@
         "type": "subs",
         "param": "a,c,d,b"
       },
-      "questgiver": "colonel"
+      "questgiver": "colonel",
+      "trust_threshold": 1
     }
   ],
   "game_over": [

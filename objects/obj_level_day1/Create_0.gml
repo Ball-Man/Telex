@@ -23,8 +23,7 @@ init_level = function() {
 quest_satisfied = function(quest) {
 	obj_main.enable(false);
 	
-	counter++;
-	if (counter >= array_length(dialogs)) {
+	if (!next_dialog()) {
 		game_end();
 		return;
 	}
@@ -36,6 +35,18 @@ quest_satisfied = function(quest) {
 	dialog_start_ext(dialogs[counter]);
 	
 	state = LEVEL_STATE.DIALOG;
+}
+
+// Skip events if the threshold isn't met
+next_dialog = function() {
+	counter++;
+	
+	while (counter < array_length(dialogs) && !is_undefined(dialogs[counter].questgiver)
+		&& dialogs[counter].questgiver.trust_level < dialogs[counter].trust_threshold)
+		counter++;
+		
+	log("counter", counter, "dialogs number", array_length(dialogs));
+	return counter < array_length(dialogs);
 }
 
 init_level();
