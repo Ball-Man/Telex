@@ -40,9 +40,8 @@ quest_satisfied = function(quest) {
 // Skip events if the threshold isn't met
 next_dialog = function() {
 	counter++;
-	
-	while (counter < array_length(dialogs) && !is_undefined(dialogs[counter].questgiver)
-		&& dialogs[counter].questgiver.trust_level < dialogs[counter].trust_threshold)
+		
+	 while (counter < array_length(dialogs) && dialogs[counter].questgiver.trust_level < dialogs[counter].trust_threshold)
 		counter++;
 		
 	log("counter", counter, "dialogs number", array_length(dialogs));
