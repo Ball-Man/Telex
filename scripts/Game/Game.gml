@@ -31,6 +31,10 @@ global.quest_types = {
 	subs: SubstitutionQuest
 }
 
+// Levels of the game (excluding the last one, which is a special case)
+global.days = [rm_level_day1, rm_level_day2, rm_level_day3, rm_level_day4];
+global.current_day_index = -1;
+
 // Number of errors from the player
 global.errors = 0;
 global.max_errors = 5;		// At 5, it's game over
@@ -223,4 +227,22 @@ function check_results(results) {
 	}
 	
 	return {result: re, index: in};
+}
+
+// Go to the next day of the game
+function next_day() {
+	global.current_day_index++;
+	if (global.current_day_index >= array_length(global.days)) {
+		// TODO: select last day
+		game_end();
+		return;
+	}
+	
+	// Reset draggable objects
+	ds_list_clear(global.draggables);
+	
+	// Reset mistakes
+	global.errors = 0;
+	
+	room_goto(global.days[global.current_day_index]);
 }

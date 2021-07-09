@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-dialogs = global.dialog_data[? "day1"];
+dialogs = global.dialog_data[? dialog_name];
 counter = 0;
 
 enum LEVEL_STATE {
@@ -23,8 +23,9 @@ init_level = function() {
 quest_satisfied = function(quest) {
 	obj_main.enable(false);
 	
+	// End of the day
 	if (!next_dialog()) {
-		game_end();
+		next_day();
 		return;
 	}
 	

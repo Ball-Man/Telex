@@ -1,12 +1,15 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_spacebar",
+    "path": "sprites/spr_spacebar/spr_spacebar.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_level",
-    "path": "objects/obj_level/obj_level.yy",
+    "name": "obj_spacebar",
+    "path": "objects/obj_spacebar/obj_spacebar.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -21,17 +24,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"key","path":"objects/obj_key1/obj_key1.yy",},"objectId":{"name":"obj_key1","path":"objects/obj_key1/obj_key1.yy",},"value":" ","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
-    "name": "levels",
-    "path": "folders/Objects/levels.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_level_day1",
+  "name": "obj_spacebar_start",
   "tags": [],
   "resourceType": "GMObject",
 }
