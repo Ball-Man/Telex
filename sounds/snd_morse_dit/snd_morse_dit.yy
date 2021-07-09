@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.12,
+  "volume": 0.11,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_morse_dit.ogg",
-  "duration": 0.081145,
+  "duration": 0.06856,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

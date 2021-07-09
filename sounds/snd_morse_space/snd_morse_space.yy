@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_morse_space.ogg",
-  "duration": 0.196701,
+  "duration": 0.21051,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

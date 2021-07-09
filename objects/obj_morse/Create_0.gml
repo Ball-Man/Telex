@@ -16,4 +16,4 @@ play = function() {
 		state = MORSE_STATE.POLL;
 }
 
-dit_time = 5;
+dit_time = 3;
