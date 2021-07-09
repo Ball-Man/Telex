@@ -34,6 +34,7 @@ global.quest_types = {
 // Levels of the game (excluding the last one, which is a special case)
 global.days = [rm_level_day1, rm_level_day2, rm_level_day3, rm_level_day4];
 global.current_day_index = -1;
+global.is_last_day = false;
 
 // Number of errors from the player
 global.errors = 0;
@@ -231,9 +232,8 @@ function check_results(results) {
 
 // Go to the next day of the game
 function next_day() {
-	global.current_day_index++;
-	if (global.current_day_index >= array_length(global.days)) {
-		// TODO: select last day
+	if (global.is_last_day) {
+		// TODO: end game
 		game_end();
 		return;
 	}
@@ -243,6 +243,17 @@ function next_day() {
 	
 	// Reset mistakes
 	global.errors = 0;
+	
+	global.current_day_index++;
+	if (global.current_day_index >= array_length(global.days)) {
+		// Select last day
+		global.is_last_day = true;
+		if (global.general.trust_level >= 8)
+			room_goto(rm_level_day5_general);
+		else if (global.colonel.trust_level >= 5)
+			room_goto(rm_level_day5_colonel);
+		return;
+	}
 	
 	room_goto(global.days[global.current_day_index]);
 }
