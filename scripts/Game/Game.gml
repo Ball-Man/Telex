@@ -233,8 +233,7 @@ function check_results(results) {
 // Go to the next day of the game
 function next_day() {
 	if (global.is_last_day) {
-		// TODO: end game
-		game_end();
+		game_final();
 		return;
 	}
 	
@@ -256,4 +255,10 @@ function next_day() {
 	}
 	
 	room_goto(global.days[global.current_day_index]);
+}
+
+// Go to the appropriate final room
+function game_final() {
+	if (room == rm_level_day5_general)
+		room_goto(rm_level_final_general);
 }

@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"obj_test1","path":"objects/obj_test1/obj_test1.yy",},"order":2,},
+    {"id":{"name":"obj_level_final_general","path":"objects/obj_level_final_general/obj_level_final_general.yy",},"order":3,},
     {"id":{"name":"spr_general","path":"sprites/spr_general/spr_general.yy",},"order":6,},
     {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},"order":0,},
     {"id":{"name":"obj_paper","path":"objects/obj_paper/obj_paper.yy",},"order":10,},
@@ -30,6 +31,7 @@
     {"id":{"name":"snd_step2","path":"sounds/snd_step2/snd_step2.yy",},"order":7,},
     {"id":{"name":"rm_level_day3","path":"rooms/rm_level_day3/rm_level_day3.yy",},"order":5,},
     {"id":{"name":"obj_drag","path":"objects/obj_drag/obj_drag.yy",},"order":2,},
+    {"id":{"name":"snd_explosion","path":"sounds/snd_explosion/snd_explosion.yy",},"order":12,},
     {"id":{"name":"spr_spacebar","path":"sprites/spr_spacebar/spr_spacebar.yy",},"order":4,},
     {"id":{"name":"spr_tele_bg","path":"sprites/spr_tele_bg/spr_tele_bg.yy",},"order":1,},
     {"id":{"name":"Game","path":"scripts/Game/Game.yy",},"order":1,},
@@ -45,6 +47,7 @@
     {"id":{"name":"rm_level","path":"rooms/rm_level/rm_level.yy",},"order":2,},
     {"id":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"order":11,},
     {"id":{"name":"obj_spacebar_start","path":"objects/obj_spacebar_start/obj_spacebar_start.yy",},"order":9,},
+    {"id":{"name":"rm_level_final_general","path":"rooms/rm_level_final_general/rm_level_final_general.yy",},"order":0,},
     {"id":{"name":"String","path":"scripts/String/String.yy",},"order":2,},
     {"id":{"name":"fnt_dialog","path":"fonts/fnt_dialog/fnt_dialog.yy",},"order":3,},
     {"id":{"name":"sh_dither","path":"shaders/sh_dither/sh_dither.yy",},"order":0,},
@@ -67,6 +70,7 @@
     {"id":{"name":"spr_paper","path":"sprites/spr_paper/spr_paper.yy",},"order":5,},
     {"id":{"name":"snd_morse_dah","path":"sounds/snd_morse_dah/snd_morse_dah.yy",},"order":9,},
     {"id":{"name":"snd_colonel_voice","path":"sounds/snd_colonel_voice/snd_colonel_voice.yy",},"order":4,},
+    {"id":{"name":"snd_launch","path":"sounds/snd_launch/snd_launch.yy",},"order":11,},
     {"id":{"name":"obj_persistent_false","path":"objects/obj_persistent_false/obj_persistent_false.yy",},"order":1,},
     {"id":{"name":"rm_level_day1","path":"rooms/rm_level_day1/rm_level_day1.yy",},"order":3,},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":0,},
@@ -101,6 +105,7 @@
     {"roomId":{"name":"rm_level_day4","path":"rooms/rm_level_day4/rm_level_day4.yy",},},
     {"roomId":{"name":"rm_level_day5_general","path":"rooms/rm_level_day5_general/rm_level_day5_general.yy",},},
     {"roomId":{"name":"rm_level_day5_colonel","path":"rooms/rm_level_day5_colonel/rm_level_day5_colonel.yy",},},
+    {"roomId":{"name":"rm_level_final_general","path":"rooms/rm_level_final_general/rm_level_final_general.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -116,6 +121,7 @@
     {"folderPath":"folders/Objects/test objects.yy","order":0,"resourceVersion":"1.0","name":"test objects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/dialog.yy","order":17,"resourceVersion":"1.0","name":"dialog","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/test rooms.yy","order":9,"resourceVersion":"1.0","name":"test rooms","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/final.yy","order":11,"resourceVersion":"1.0","name":"final","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
