@@ -6,6 +6,9 @@ switch (state) {
 			var snd = audio_play_sound(snd_key_down, 0, false);
 			audio_sound_pitch(snd, random_range(0.9, 1.1));
 			
+			// Push letter to the morse queue
+			morse_push(key);
+			
 			//alarm_set(0, press_time);
 		}
 		image_index = 0;
