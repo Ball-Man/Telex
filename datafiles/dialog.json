@@ -2,10 +2,14 @@
   "day1": [
     {
       "data": [
+        "Day 1"
+      ]
+    },
+    {
+      "data": [
         "Welcome",
         "Please have a seat"
-      ],
-      "questgiver": "general"
+      ]
     },
     {
       "data": [
@@ -57,6 +61,11 @@
   "day2": [
     {
       "data": [
+        "Day 2\nColonel"
+      ]
+    },
+    {
+      "data": [
         "Welcome",
         "Long time no see"
       ],
@@ -94,6 +103,11 @@
     }
   ],
   "day3": [
+    {
+      "data": [
+        "Day 3\nContrast"
+      ]
+    },
     {
       "data": [
         "Good morning"
@@ -167,6 +181,11 @@
     }
   ],
   "day4": [
+    {
+      "data": [
+        "Day 4\nTreason"
+      ]
+    },
     {
       "data": [
         "Good morning",
@@ -258,6 +277,11 @@
   "day5_general": [
     {
       "data": [
+        "Day 2\nThe attack"
+      ]
+    },
+    {
+      "data": [
         "Welcome",
         "Please have a sit",
         "Our colleague, Colonel Slovik was found guilty of treason",
@@ -297,6 +321,11 @@
     }
   ],
   "day5_colonel": [
+    {
+      "data": [
+        "Day 2\nThe door to the skies"
+      ]
+    },
     {
       "data": [
         "My friend",

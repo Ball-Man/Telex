@@ -36,6 +36,10 @@ function DialogData(strings_) constructor {
 	immediate_skip = false;
 	if (argument_count > 5)
 		immediate_skip = argument[5];
+		
+	action_time = 60;
+	if (argument_count > 6)
+		action_time = argument[6];
 }
 
 // A Dialog encapsules a DialogData and enriches it with specific
@@ -114,6 +118,8 @@ function dialog_import() {
 			
 			var autoscroll = sub_list[| j][? "autoscroll"];		// Pack autoscroll
 			
+			var action_time = sub_list[| j][? "action_time"];	// Pack action time (in frames)
+			
 			// Pack questgiver
 			var questgiver_name = sub_list[| j][? "questgiver"];
 			var questgiver = variable_struct_get(global.questgivers, is_undefined(questgiver_name) ? "" : questgiver_name);
@@ -143,7 +149,8 @@ function dialog_import() {
 			// Pack everything in a DialogData instance
 			sub_array[j] = new DialogData(strings_array, is_undefined(autoscroll) ? false : autoscroll, questgiver,
 				is_undefined(trust_threshold) ? 0 : trust_threshold, quest,
-				is_undefined(immediate_skip) ? false : immediate_skip);
+				is_undefined(immediate_skip) ? false : immediate_skip,
+				is_undefined(action_time) ? 60 : action_time);
 		}
 		
 		dialog_data[? start_key] = sub_array;
@@ -159,7 +166,7 @@ function dialog_import() {
 // Start a dialog by sliding in the correct QuestGiver, deploying the Quest
 // and finally sliding out the QuestGiver (if required).
 function dialog_start_ext(dialog_data) {
-	var action_time = 60;
+	var action_time = dialog_data.action_time;
 	if (argument_count > 1)
 		action_time = argument[1];
 	
