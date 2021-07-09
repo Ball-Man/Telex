@@ -4,7 +4,8 @@
       "data": [
         "Welcome",
         "Please have a seat"
-      ]
+      ],
+      "questgiver": "general"
     },
     {
       "data": [
@@ -30,7 +31,163 @@
         "You do understand that in this job mistakes cannot be forgiven"
       ],
       "quest": {
-        "text": "First of july provisions",
+        "text": "General Ben Pershing",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Keep up the good work"
+      ],
+      "quest": {
+        "text": "Weather is sunny",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Enough work for today",
+        "See you tomorrow, and be on time"
+      ],
+      "questgiver": "general"
+    }
+  ],
+  "day2": [
+    {
+      "data": [
+        "Welcome",
+        "Long time no see"
+      ],
+      "questgiver": "colonel"
+    },
+    {
+      "data": [
+        "My name is William Slovik",
+        "You probably do not remember, but indeed we have already met before",
+        "You were one of the candidates from the last round of ammissions",
+        "Anyway, today Mr. Pershing is busy",
+        "I will be giving you assignments until his returnal"
+      ],
+      "quest": {
+        "text": "Here DCA",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel"
+    },
+    {
+      "data": [
+        "Great"
+      ],
+      "quest": {
+        "text": "Move to second july",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel"
+    },
+    {
+      "data": [
+        "Great work, you can go back to your family now"
+      ],
+      "questgiver": "colonel"
+    }
+  ],
+  "day3": [
+    {
+      "data": [
+        "Good morning"
+      ],
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Let us start the day"
+      ],
+      "quest": {
+        "text": "Here DCA",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Listen",
+        "Today we have a critical assignment",
+        "Do not disappoint me"
+      ],
+      "quest": {
+        "text": "Crow Butte request permission",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Hey buddy",
+        "I believe the General has made a slight mistake",
+        "Send this note instead, will you?",
+        "It is very important so do not mess this up"
+      ],
+      "quest": {
+        "text": "Lost Creek request permission",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel",
+      "immediate_skip": true
+    },
+    {
+      "data": [
+        "We also have this one"
+      ],
+      "quest": {
+        "text": "Immediate action skip preliminary checks",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "The General was in a hurry and had a slight oversight",
+        "Do me a favor and send this rectified version instead of his"
+      ],
+      "quest": {
+        "text": "Preliminary checks OK",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel",
+      "immediate_skip": true
+    },
+    {
+      "data": [
+        "Enough work for today",
+        "See you tomorrow"
+      ],
+      "questgiver": "general"
+    }
+  ],
+  "day4": [
+    {
+      "data": [
+        "Good morning",
+        "We have to talk"
+      ],
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "I have reasons to suspect that someone in this office is reading my notes",
+        "Someone else that is not you",
+        "For this reason, today I will be giving you encrypted messages",
+        "Ever heard of the Caeser Cypher?",
+        "My messages will have all the letters shifted by one position on the alphabet",
+        "This means A becomes B, B becomes C and so on",
+        "Be sure to decrypt them before typing. This code is between you and me only",
+        "Our allies would not understand a single word",
+        "Try with this"
+      ],
+      "quest": {
+        "text": "HERE DCA",
         "questgiver": "general",
         "type": "caeser",
         "param": 1
@@ -39,17 +196,124 @@
     },
     {
       "data": [
-        "Hello"
+        "See? It is not that hard after all"
       ],
       "quest": {
-        "text": "Amico mio della bolizia.",
-        "questgiver": "colonel",
-        "type": "subs",
-        "param": "a,c,d,b"
+        "text": "IMMEDIATE ACTION",
+        "questgiver": "general",
+        "type": "caeser",
+        "param": 1
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Hey man",
+        "I want to be honest with you",
+        "I believe the General is plotting something",
+        "His notes look suspicious",
+        "Please ignore his orders and send this to our allies"
+      ],
+      "quest": {
+        "text": "Fourth of July transfer to YVR",
+        "questgiver": "colonel"
       },
       "questgiver": "colonel",
       "immediate_skip": true,
-      "trust_threshold": 1
+      "trust_threshold": 3
+    },
+    {
+      "data": [
+        "Thanks to your support, I will now be leading this operation"
+      ],
+      "quest": {
+        "text": "Control to Colonel William Slovik",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel",
+      "trust_threshold": 4
+    },
+    {
+      "data": [
+        "Thanks for your support",
+        "Our operation has the maximum priority and must not be stopped by subversives",
+        "This is our last communication for today"
+      ],
+      "quest": {
+        "text": "SET ATTACK FOURTH JULY",
+        "questgiver": "general",
+        "type": "caeser",
+        "param": 1
+      },
+      "questgiver": "general",
+      "trust_threshold": 7
+    },
+    {
+      "data": [
+        "You can head home now"
+      ],
+      "questgiver": "general"
+    }
+  ],
+  "day5_general": [
+    {
+      "data": [
+        "Welcome",
+        "Please have a sit",
+        "Our colleague, Colonel Slovik was found guilty of treason",
+        "He is being arrested in this very moment"
+      ],
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "The time has finally come"
+      ],
+      "quest": {
+        "text": "Here DCA",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "To get back what is ours"
+      ],
+      "quest": {
+        "text": "Launch set",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "This is it"
+      ],
+      "quest": {
+        "text": "Launch confirmed",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    }
+  ],
+  "day5_colonel": [
+    {
+      "data": [
+        "My friend",
+        "Our General never had good intentions",
+        "But thanks to you and me, we are safe"
+      ],
+      "questgiver": "colonel"
+    },
+    {
+      "data": [
+        "Let me show you something"
+      ],
+      "quest": {
+        "text": "Polaris op set",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel"
     }
   ],
   "game_over": [
