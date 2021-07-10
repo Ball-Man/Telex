@@ -52,6 +52,7 @@
     {"id":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"order":12,},
     {"id":{"name":"obj_spacebar_start","path":"objects/obj_spacebar_start/obj_spacebar_start.yy",},"order":10,},
     {"id":{"name":"rm_level_final_general","path":"rooms/rm_level_final_general/rm_level_final_general.yy",},"order":0,},
+    {"id":{"name":"snd_theme","path":"sounds/snd_theme/snd_theme.yy",},"order":13,},
     {"id":{"name":"String","path":"scripts/String/String.yy",},"order":2,},
     {"id":{"name":"fnt_dialog","path":"fonts/fnt_dialog/fnt_dialog.yy",},"order":3,},
     {"id":{"name":"sh_dither","path":"shaders/sh_dither/sh_dither.yy",},"order":0,},

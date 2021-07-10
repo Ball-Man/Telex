@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.47,
+  "volume": 0.64,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_launch.ogg",
-  "duration": 16.62389,
+  "soundFile": "snd_theme.ogg",
+  "duration": 33.2270851,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_launch",
+  "name": "snd_theme",
   "tags": [],
   "resourceType": "GMSound",
 }
