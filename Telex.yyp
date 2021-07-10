@@ -20,6 +20,7 @@
     {"id":{"name":"obj_dialog","path":"objects/obj_dialog/obj_dialog.yy",},"order":0,},
     {"id":{"name":"GameTests","path":"scripts/GameTests/GameTests.yy",},"order":1,},
     {"id":{"name":"obj_questgiver","path":"objects/obj_questgiver/obj_questgiver.yy",},"order":15,},
+    {"id":{"name":"spr_1bit_logo","path":"sprites/spr_1bit_logo/spr_1bit_logo.yy",},"order":14,},
     {"id":{"name":"Morse","path":"scripts/Morse/Morse.yy",},"order":7,},
     {"id":{"name":"rm_level_day5_colonel","path":"rooms/rm_level_day5_colonel/rm_level_day5_colonel.yy",},"order":8,},
     {"id":{"name":"obj_tests","path":"objects/obj_tests/obj_tests.yy",},"order":0,},
