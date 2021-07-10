@@ -354,5 +354,20 @@
       ],
       "questgiver": "general"
     }
+  ],
+  "final_colonel": [
+    {
+      "data": [
+        "Many people on our planet dream about one thing",
+        "Becoming God, inheriting their omni comprehensive consciousness and knowledge",
+        "But the truth is, becoming God is not about overpowering them",
+        "There is no inheritance for knowledge, nor killing grants any heirage",
+        "In order to become them one must individually reach their knowledge",
+        "I am here to fullfill this duty",
+        "Opening the door to the skies, and getting to know the last piece of the puzzle",
+        "The time has finally come"
+      ],
+      "questgiver": "colonel"
+    }
   ]
 }

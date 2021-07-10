@@ -261,4 +261,6 @@ function next_day() {
 function game_final() {
 	if (room == rm_level_day5_general)
 		room_goto(rm_level_final_general);
+	else if (room == rm_level_day5_colonel)
+		room_goto(rm_level_final_colonel);
 }
