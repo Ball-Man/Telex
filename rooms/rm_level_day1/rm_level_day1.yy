@@ -25,7 +25,6 @@
         {"properties":[
             {"propertyId":{"name":"dialog_name","path":"objects/obj_level_day/obj_level_day.yy",},"objectId":{"name":"obj_level_day","path":"objects/obj_level_day/obj_level_day.yy",},"value":"day1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_level_day","path":"objects/obj_level_day/obj_level_day.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":32.0,"resourceVersion":"1.0","name":"inst_29E0C87B","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_morse","path":"objects/obj_morse/obj_morse.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":64.0,"resourceVersion":"1.0","name":"inst_46F454EF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_mask","path":"objects/obj_mask/obj_mask.yy",},"inheritCode":true,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_3FC56432","path":"rooms/rm_level/rm_level.yy",},"frozen":false,"ignore":false,"inheritItemSettings":true,"x":-32.0,"y":128.0,"resourceVersion":"1.0","name":"inst_3FC56432","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"notes","tags":[],"resourceType":"GMRInstanceLayer",},
@@ -174,7 +173,6 @@
     {"name":"inst_21EC1A12","path":"rooms/rm_level_day1/rm_level_day1.yy",},
     {"name":"inst_29E0C87B","path":"rooms/rm_level_day1/rm_level_day1.yy",},
     {"name":"inst_1740D770","path":"rooms/rm_level_day1/rm_level_day1.yy",},
-    {"name":"inst_46F454EF","path":"rooms/rm_level_day1/rm_level_day1.yy",},
     {"name":"inst_3FC56432","path":"rooms/rm_level_day1/rm_level_day1.yy",},
   ],
   "inheritCreationOrder": true,
