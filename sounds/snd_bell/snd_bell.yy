@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.62,
+  "volume": 0.35,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_explosion.ogg",
-  "duration": 10.45398,
+  "soundFile": "snd_bell.ogg",
+  "duration": 5.008354,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_explosion",
+  "name": "snd_bell",
   "tags": [],
   "resourceType": "GMSound",
 }

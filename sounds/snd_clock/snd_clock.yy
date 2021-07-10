@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.62,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_explosion.ogg",
-  "duration": 10.45398,
+  "soundFile": "snd_clock.ogg",
+  "duration": 26.0389919,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_explosion",
+  "name": "snd_clock",
   "tags": [],
   "resourceType": "GMSound",
 }
