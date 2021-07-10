@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_spacebar",
-    "path": "sprites/spr_spacebar/spr_spacebar.yy",
+    "name": "spr_spacebar_start",
+    "path": "sprites/spr_spacebar_start/spr_spacebar_start.yy",
   },
   "solid": false,
   "visible": true,
