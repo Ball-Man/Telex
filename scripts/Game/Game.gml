@@ -45,6 +45,8 @@ global.max_errors = 5;		// At 5, it's game over
 #macro GRAY $2a2a2a
 #macro DARK_GRAY $0e0e0e
 
+global.localizer = localizer_load("local.json");
+
 // NPCs giving quests in the game
 // In the original idea, there are two of them
 function QuestGiver() constructor {
@@ -68,8 +70,11 @@ function QuestGiver() constructor {
 	
 	instance = undefined;
 	
+	_day_trust = 0;
+	
 	static gain_trust = function() {
 		trust_level++;
+		_day_trust++;
 	}
 	
 	// Create an instance of the QuestGiver and slide it on the screen
@@ -94,6 +99,17 @@ function QuestGiver() constructor {
 		
 		instance.state = QUESTGIVER_STATE.SLIDING_OUT;
 		audio_play_sound(snd_step2, 0, false);
+	}
+	
+	// Reset trust gained in the current day and remove it from current trust (after game over, the day restarts)
+	static lose_day = function() {
+		trust_level -= _day_trust;
+		reset_day();
+	}
+	
+	// Reset trust for the day, preparing for the next
+	static reset_day = function() {
+		_day_trust = 0;
 	}
 }
 
@@ -243,6 +259,10 @@ function next_day() {
 	// Reset mistakes
 	global.errors = 0;
 	
+	// Reset NPCs
+	global.colonel.reset_day();
+	global.general.reset_day();
+	
 	global.current_day_index++;
 	if (global.current_day_index >= array_length(global.days)) {
 		// Select last day
@@ -263,4 +283,22 @@ function game_final() {
 		room_goto(rm_level_final_general);
 	else if (room == rm_level_day5_colonel)
 		room_goto(rm_level_final_colonel);
+}
+
+// Lose game and restart day
+function game_over() {
+	obj_main.enable(false);		// Disable writing
+	
+	if (is_undefined(obj_main.game_over_dialog))
+		obj_main.game_over_dialog = dialog_start_ext(global.dialog_data[? "game_over"][0]);
+	else if (!instance_exists(obj_main.game_over_dialog)) {
+		ds_list_clear(global.draggables);		// Reset draggables
+		global.errors = 0;						// Reset mistakes
+		
+		// Reset NPCs
+		global.colonel.lose_day();
+		global.general.lose_day();
+		
+		room_restart();
+	}
 }

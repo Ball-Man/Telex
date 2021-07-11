@@ -47,10 +47,6 @@ if (instance_exists(obj_paper) && can_write && array_length(global.target) > 0) 
 
 // Check for mistakes (game over)
 if (global.errors >= global.max_errors) {
-	enable(false);
 	global.errors = global.max_errors;
-	if (is_undefined(game_over_dialog))
-		game_over_dialog = dialog_start_ext(global.dialog_data[? "game_over"][0]);
-	else if (!instance_exists(game_over_dialog))
-		game_end();
+	game_over();
 }
