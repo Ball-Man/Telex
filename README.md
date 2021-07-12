@@ -10,7 +10,7 @@ The game is about a teleprinter operator, hired by the army in order to send var
 Mistakes will not be tolerated.
 
 ## Credits
-From (Freesound)[https://freesound.org/], thanks to:
+From [Freesound](https://freesound.org/), thanks to:
 * **testing_player** for the button sound (from which the typewriter's sounds have been extrapolated)
 * **barrygusey** for the page sound (used when receiving notes from NPCs)
 * **robinhood76** for the typewriter key sound (used as sound queue for mistakes)
