@@ -1,4 +1,9 @@
 /// @description Import data from files
+// Verify checksums
+if (!checksum_verify()) {
+	show_error("Failed checksum verification. Files have been altered.", true);
+}
+
 dialog_import();
 
 log("dialog data size", ds_map_size(global.dialog_data));
