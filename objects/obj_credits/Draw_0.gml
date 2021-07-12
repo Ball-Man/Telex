@@ -2,6 +2,7 @@
 // Draw text
 draw_set_font(fnt_dialog);
 draw_set_halign(fa_center);
+draw_set_color(c_white);
 
 var localized_text = localizer_get(global.localizer, credits[index]);
 var credit_height = string_height(localized_text)

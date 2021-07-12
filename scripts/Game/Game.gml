@@ -302,3 +302,11 @@ function game_over() {
 		room_restart();
 	}
 }
+
+// End the game and go to the credits room
+function game_credits() {
+	// Stop all sounds (eg. the explosion from the general)
+	audio_stop_all();
+	
+	room_goto(rm_endgame_credits);
+}

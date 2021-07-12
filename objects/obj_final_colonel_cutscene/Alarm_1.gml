@@ -1,2 +1,2 @@
 /// @description Game end
-game_end();
+game_credits();
