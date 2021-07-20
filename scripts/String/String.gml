@@ -36,3 +36,16 @@ function string_split(str, sep) {
 	
 	return splits;
 }
+
+// Return a path string joined with the correct separator (eg. "/").
+function string_path_join() {
+	var sep = "/";
+	if (os_type == os_windows || os_type == os_uwp)
+		sep = "\\";
+	
+	var ret = "";
+	for (var i = 0; i < argument_count; i++)
+		ret += string(argument[i]) + (i < (argument_count - 1) ? sep : "");
+		
+	return ret;
+}
