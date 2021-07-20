@@ -5,6 +5,7 @@
 //}
 
 import_language_file();
+localizer_import_all();
 dialog_import_all();
 
 log("dialog data size", ds_map_size(global.dialog_data));

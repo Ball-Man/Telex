@@ -45,7 +45,9 @@ global.max_errors = 5;		// At 5, it's game over
 #macro GRAY $2a2a2a
 #macro DARK_GRAY $0e0e0e
 
-global.localizer = localizer_load("local.json");
+global.localizer_language_index = 0;
+global.localizer_map = ds_map_create();
+global.localizer = undefined;
 
 // NPCs giving quests in the game
 // In the original idea, there are two of them
@@ -309,4 +311,22 @@ function game_credits() {
 	audio_stop_all();
 	
 	room_goto(rm_endgame_credits);
+}
+
+// Load all localizer files based on available languages and populate global.localizer_map.
+function localizer_import_all() {
+	for (var i = 0; i < array_length(global.languages); i++)
+		global.localizer_map[? global.languages[i]] = localizer_load(string_path_join(global.languages[i], "local.json"));
+		
+	// Set first localizer
+	global.localizer_language_index = 0;
+	global.localizer = global.localizer_map[? global.languages[0]];
+}
+
+// Select next language for the current localizer
+function localizer_language_next() {
+	global.localizer_language_index++;
+	global.localizer_language_index %= array_length(global.languages);
+
+	global.localizer = global.localizer_map[? global.languages[global.localizer_language_index]];
 }
