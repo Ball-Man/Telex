@@ -1,0 +1,373 @@
+{
+  "day1": [
+    {
+      "data": [
+        "Giorno 1\n30 Giugno"
+      ]
+    },
+    {
+      "data": [
+        "Benvenuto",
+        "Accomodati pure"
+      ]
+    },
+    {
+      "data": [
+        "Sono Ben Pershing, Generale dell'esercito",
+        "Sono felice di informarti che sei il candidato fortunato che e' stato scelto per questo lavoro",
+        "Quello che devi fare e' abbastanza semplice",
+        "Dovrai comunicare con i nostri alleati oltreoceano",
+        "Ti forniro' alcune note con le informazioni che dobbiamo trasmettere",
+        "Basta digitarli sulla telescrivente e il sistema trasmetterà tutto tramite la rete telegrafica",
+        "Iniziamo dunque",
+        "Prova a inviare questo messaggio di prova"
+      ],
+      "quest": {
+        "text": "Qui DCA",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Molto bene",
+        "I nostri contatti ci hanno suggerito il tuo nome per via della tua presunta fedelta' ed affidabilita'",
+        "Capirai che in questo lavoro, gli errori non sono perdonabili"
+      ],
+      "quest": {
+        "text": "Generale Ben Pershing",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Continua cosi'"
+      ],
+      "quest": {
+        "text": "Tempo soleggiato",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Lavoro sufficiente per oggi",
+        "Ci vediamo domani, sii puntuale"
+      ],
+      "questgiver": "general"
+    }
+  ],
+  "day2": [
+    {
+      "data": [
+        "Giorno 2\nColonnello"
+      ]
+    },
+    {
+      "data": [
+        "Benvenuto",
+        "E' da tanto che non ci vediamo"
+      ],
+      "questgiver": "colonel"
+    },
+    {
+      "data": [
+        "Mi chiamo William Slovik",
+        "Probabilmente non ti ricordi, ma in effetti ci siamo gia' incontrati prima",
+        "Eri uno dei candidati dall'ultimo girone di ammissioni",
+        "Ad ogni modo, oggi Mr. Pershing e' occupato",
+        "Ti daro' io incarichi fino al suo ritorno"
+      ],
+      "quest": {
+        "text": "Qui DCA",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel"
+    },
+    {
+      "data": [
+        "Ottimo"
+      ],
+      "quest": {
+        "text": "Spostare al due luglio",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel"
+    },
+    {
+      "data": [
+        "Ottimo lavoro, puoi tornare dalla tua famiglia adesso"
+      ],
+      "questgiver": "colonel"
+    }
+  ],
+  "day3": [
+    {
+      "data": [
+        "Giorno 3\nContrasto"
+      ]
+    },
+    {
+      "data": [
+        "Buongiorno"
+      ],
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Iniziamo la giornata"
+      ],
+      "quest": {
+        "text": "Qui DCA",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Ascolta",
+        "Oggi abbiamo un compito critico",
+        "Non mi deludere"
+      ],
+      "quest": {
+        "text": "Crow Butte richiede il permesso",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Hey amico",
+        "Credo che il Generale abbia fatto un piccolo errore",
+        "Invia questa nota invece, ok?",
+        "E' molto importante, non rovinare tutto"
+      ],
+      "quest": {
+        "text": "Lost Creek richiede il permesso",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel",
+      "immediate_skip": true
+    },
+    {
+      "data": [
+        "Abbiamo anche questo"
+      ],
+      "quest": {
+        "text": "Azione immediata saltare i controlli preliminari",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Il Generale aveva fretta e ha avuto una leggera svista",
+        "Fammi un favore e invia questa versione rettificata invece della sua"
+      ],
+      "quest": {
+        "text": "Controlli preliminari OK",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel",
+      "immediate_skip": true
+    },
+    {
+      "data": [
+        "Lavoro sufficiente per oggi",
+        "Ci vediamo domani"
+      ],
+      "questgiver": "general"
+    }
+  ],
+  "day4": [
+    {
+      "data": [
+        "Giorno 4\nTradimento"
+      ]
+    },
+    {
+      "data": [
+        "Buongiorno",
+        "Dobbiamo parlare"
+      ],
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Ho motivo di sospettare che qualcuno in questo ufficio stia leggendo i miei appunti",
+        "Qualcun altro che non sei tu",
+        "Per questo oggi ti daro' dei messaggi criptati",
+        "Hai mai sentito parlare del Cifrario di Cesare?",
+        "I miei messaggi avranno tutte le lettere spostate di una posizione sull'alfabeto",
+        "Cio' significa che A diventa B, B diventa C e cosi' via",
+        "Assicurati di decifrarli prima di digitarli. Questo codice e' solo tra me e te",
+        "I nostri alleati non capirebbero una sola parola",
+        "Prova con questo"
+      ],
+      "quest": {
+        "text": "QUI DCA",
+        "questgiver": "general",
+        "type": "caeser",
+        "param": 1
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Vedi? Non e' così difficile dopo tutto"
+      ],
+      "quest": {
+        "text": "AZIONE IMMEDIATA",
+        "questgiver": "general",
+        "type": "caeser",
+        "param": 1
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Hey amico",
+        "Voglio essere onesto con te",
+        "Credo che il Generale stia tramando qualcosa",
+        "I suoi appunti sembrano sospetti",
+        "Per favore, ignora i suoi ordini e invia questo ai nostri alleati"
+      ],
+      "quest": {
+        "text": "Quattro luglio trasferire a YVR",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel",
+      "immediate_skip": true,
+      "trust_threshold": 3
+    },
+    {
+      "data": [
+        "Grazie al tuo supporto, ora guidero' questa operazione"
+      ],
+      "quest": {
+        "text": "Controllo a Colonnello William Slovik",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel",
+      "trust_threshold": 4
+    },
+    {
+      "data": [
+        "Grazie per il tuo sostegno",
+        "La nostra operazione ha la massima priorita' e non deve essere fermata da sovversivi",
+        "Questa e' la nostra ultima comunicazione per oggi"
+      ],
+      "quest": {
+        "text": "IMPOSTARE ATTACCO QUATTRO LUGLIO",
+        "questgiver": "general",
+        "type": "caeser",
+        "param": 1
+      },
+      "questgiver": "general",
+      "trust_threshold": 7
+    },
+    {
+      "data": [
+        "Puoi andare a casa adesso"
+      ],
+      "questgiver": "general"
+    }
+  ],
+  "day5_general": [
+    {
+      "data": [
+        "Giorno 5\nL'attacco"
+      ]
+    },
+    {
+      "data": [
+        "Benvenuto",
+        "Siediti pure",
+        "Il nostro collega, il colonnello Slovik e' stato riconosciuto colpevole di tradimento",
+        "Sta venendo arrestato proprio in questo momento"
+      ],
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "E' finalmente giunto il momento"
+      ],
+      "quest": {
+        "text": "Qui DCA",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Per riavere cio' che e' nostro"
+      ],
+      "quest": {
+        "text": "Lancio impostato",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    },
+    {
+      "data": [
+        "Questo e' tutto"
+      ],
+      "quest": {
+        "text": "Lancio confermato",
+        "questgiver": "general"
+      },
+      "questgiver": "general"
+    }
+  ],
+  "day5_colonel": [
+    {
+      "data": [
+        "Giorno 5\nLa porta dei cieli"
+      ]
+    },
+    {
+      "data": [
+        "Amico mio",
+        "Il nostro Generale non ha mai avuto buone intenzioni",
+        "Ma grazie a te e a me, siamo al sicuro"
+      ],
+      "questgiver": "colonel"
+    },
+    {
+      "data": [
+        "Lascia che ti mostri qualcosa"
+      ],
+      "quest": {
+        "text": "Impostare operazione Polaris",
+        "questgiver": "colonel"
+      },
+      "questgiver": "colonel"
+    }
+  ],
+  "game_over": [
+    {
+      "data": [
+        "Sei stato avvertito",
+        "Gli errori non sono tollerati qui",
+        "Arrivederci"
+      ],
+      "questgiver": "general"
+    }
+  ],
+  "final_colonel": [
+    {
+      "data": [
+        "Molte persone sul nostro pianeta sognano una cosa",
+        "Diventare Dio, ereditando la sua coscienza e conoscenza onnicomprensiva",
+        "Ma la verita' e' che diventare Dio non significa sopraffarlo",
+        "Non c'e' successione per la conoscenza, ne' l'uccisione concede diritto d'eredita'",
+        "Per diventare come Dio bisogna raggiungere individualmente la sua conoscenza",
+        "Sono qui per adempiere a questo dovere",
+        "Aprire la porta dei cieli e conoscere l'ultimo pezzo del puzzle",
+        "E' finalmente giunto il momento"
+      ],
+      "questgiver": "colonel"
+    }
+  ]
+}

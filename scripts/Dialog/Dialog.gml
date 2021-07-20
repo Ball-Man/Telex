@@ -5,6 +5,8 @@ global._dialog_prev_keyboard_string = "";
 
 // Data from files
 #macro DIALOG_DATA_FILE "dialog.json"
+global.dialog_language_index = 0;
+global.dialog_data_map = ds_map_create();		// Map based on available languages (see Lang script)
 global.dialog_data = undefined;
 
 // Dialogs are shown in chunks. Hence a complete dialog is a nothing but a list of strings.
@@ -84,16 +86,15 @@ function dialog_end() {
 	room_goto(global._dialog_prev_room);
 }
 
-// Populate global.dialog_data with a dictionary of data imported
-// from json.
-function dialog_import() {
-	if (!file_exists(DIALOG_DATA_FILE)) {
-		show_error("Missing file " + DIALOG_DATA_FILE, false);
+// Return a dictionary of dialog data from json.
+function dialog_import(dialog_file) {
+	if (!file_exists(dialog_file)) {
+		show_error("Missing file " + dialog_file, false);
 		return;
 	}
-	
+
 	// Read from file
-	var file = file_text_open_read(DIALOG_DATA_FILE);
+	var file = file_text_open_read(dialog_file);
 	var json = "";
 	while (!file_text_eof(file))
 		json += file_text_readln(file);
@@ -157,10 +158,10 @@ function dialog_import() {
 		
 		start_key = ds_map_find_next(file_dict, start_key);
 	}
-	global.dialog_data = dialog_data;
-	
 	// Cleanup
 	ds_map_destroy(file_dict);
+	
+	return dialog_data;
 }
 
 // Start a dialog by sliding in the correct QuestGiver, deploying the Quest
@@ -175,4 +176,22 @@ function dialog_start_ext(dialog_data) {
 	inst.action_time = action_time;
 	
 	return inst;
+}
+
+// Import all available dialogs (based on available languages)
+function dialog_import_all() {
+	for (var i = 0; i < array_length(global.languages); i++)
+		global.dialog_data_map[? global.languages[i]] = dialog_import(string_path_join(global.languages[i], DIALOG_DATA_FILE));
+		
+	// Set current language (simply the first language found in the list)
+	global.dialog_language_index = 0;
+	global.dialog_data = global.dialog_data_map[? global.languages[0]];
+}
+
+// Select next available language for the dialogs
+function dialog_language_next() {
+	global.dialog_language_index++;
+	global.dialog_language_index %= array_length(global.languages);
+	
+	global.dialog_data = global.dialog_data_map[? global.languages[global.dialog_language_index]];
 }
