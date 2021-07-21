@@ -162,6 +162,8 @@
     {"CopyToMask":-1,"filePath":"datafiles/it","resourceVersion":"1.0","name":"dialog.json","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/en","resourceVersion":"1.0","name":"local.json","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/it","resourceVersion":"1.0","name":"local.json","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/it","resourceVersion":"1.0","name":"checksum.ini","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"checksum.ini","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.3.570",

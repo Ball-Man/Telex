@@ -1,8 +1,9 @@
 /// @description Import data from files
+
 // Verify checksums
-//if (!checksum_verify()) {
-//	show_error("Failed checksum verification. Files have been altered.", true);
-//}
+if (!checksum_verify_all()) {
+	show_error("Failed checksum verification. Files have been altered.", true);
+}
 
 import_language_file();
 localizer_import_all();
