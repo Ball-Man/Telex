@@ -1,4 +1,4 @@
-credits = ["realized", "graphics", "programming", "music", "sfx", "thanks"];
+credits = ["realized", "graphics", "programming", "music", "sfx", "translation:", "thanks"];
 index = 0;
 
 alarm_set(0, skip_time);
