@@ -18,4 +18,7 @@ From [Freesound](https://freesound.org/), thanks to:
 * **tetrisrocker** (great name) for the clock ticks
 * **ryding** for the bell sound
 
+Translations, thanks to:
+* **Xeryan** for the italian translation
+
 Thanks to everyone supporting me and GMI.
